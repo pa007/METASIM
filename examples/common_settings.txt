@@ -1,6 +1,6 @@
 # Add include directory.
 include_directories(.)
-include_directories(../../src)
+include_directories("${PROJECT_SOURCE_DIR}/include")
 
 # Environment-based settings.
 if(APPLE)

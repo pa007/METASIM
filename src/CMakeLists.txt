@@ -1,5 +1,5 @@
 # Add current directory.
-include_directories(.)
+include_directories("${PROJECT_SOURCE_DIR}/include")
 
 # Environment-dependable settings.
 if(APPLE)
