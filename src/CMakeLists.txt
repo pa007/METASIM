@@ -15,12 +15,9 @@ elseif(WIN32)
 
 endif()
 
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
+
 # Create a library called "metasim" which includes the source files.
-add_library(metasim ${METASIM_LIB} basestat.cpp entity.cpp genericvar.cpp
+add_library(METASIM ${METASIM_LIB} basestat.cpp entity.cpp genericvar.cpp
   regvar.cpp strtoken.cpp trace.cpp debugstream.cpp event.cpp
   randomvar.cpp simul.cpp tick.cpp)
-  
-# Export.
-export(TARGETS metasim FILE "./metasimConfig.cmake")
-export(PACKAGE metasim)
-  

@@ -6,4 +6,4 @@ add_executable(eth example.cpp link.cpp	link.hpp message.cpp message.hpp netinte
 	netinterface.hpp node.cpp node.hpp)
 
 # Indicate that the executable needs metasim library.
-target_link_libraries( eth metasim )
+target_link_libraries(eth METASIM)

@@ -15,4 +15,4 @@ endif()
 add_executable(test_metasim myentity.cpp TestEntityOrder.cpp TestEntitySameName.cpp TestParseUtil.cpp TestTick.cpp)
 
 # Indicate that rtlib need metasim library.
-target_link_libraries(test_metasim metasim)
+target_link_libraries(test_metasim METASIM)

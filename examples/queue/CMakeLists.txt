@@ -5,4 +5,4 @@ include(${CMAKE_CURRENT_DOURCE_DIR}../common_settings.txt)
 add_executable(queue queue.cpp queue.hpp)
 
 # Indicate that the executable needs metasim library.
-target_link_libraries( queue metasim )
+target_link_libraries(queue METASIM)
