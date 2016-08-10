@@ -1,8 +1,7 @@
-# Include Environment-based settings.
-include(${CMAKE_CURRENT_DOURCE_DIR}../common_settings.txt)
+project(QUEUE)
 
 # Create the executable.
-add_executable(queue queue.cpp queue.hpp)
+add_executable(${PROJECT_NAME} queue.cpp queue.hpp)
 
 # Indicate that the executable needs metasim library.
-target_link_libraries(queue METASIM)
+target_link_libraries(${PROJECT_NAME} ${METASIM_LIB_NAME}_STATIC)

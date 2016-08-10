@@ -1,8 +1,8 @@
-# Include Environment-based settings.
-include(${CMAKE_CURRENT_DOURCE_DIR}../common_settings.txt)
+project(MARKOV)
 
 # Create the executable.
-add_executable(markov markov.cpp)
+add_executable(${PROJECT_NAME}
+	markov.cpp)
 
 # Indicate that the executable needs metasim library.
-target_link_libraries(markov METASIM)
+target_link_libraries(${PROJECT_NAME} ${METASIM_LIB_NAME}_STATIC)

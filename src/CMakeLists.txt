@@ -1,23 +1,38 @@
-# Add current directory.
-include_directories("${PROJECT_SOURCE_DIR}/include")
+project(${METASIM_LIB_NAME})
 
-# Environment-dependable settings.
-if(APPLE)
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++0x")
-	set(METASIM_LIB "SHARED")
+# Define all the source and header files
+# ------------------------------
+set(${PROJECT_NAME}_headers 
+	baseexc.hpp basestat.hpp basetype.hpp debugstream.hpp entity.hpp
+	event.hpp factory.hpp genericvar.hpp gevent.hpp history.hpp 
+	metasim.hpp particle.hpp plist.hpp randomvar.hpp regvar.hpp
+	simul.hpp strtoken.hpp tick.hpp trace.hpp)
+set(${PROJECT_NAME}_sources
+	basestat.cpp debugstream.cpp entity.cpp event.cpp genericvar.cpp
+	randomvar.cpp regvar.cpp simul.cpp strtoken.cpp tick.cpp trace.cpp)
+
+
+# Create static and shared libraries for METASIM
+# ------------------------------
+add_library(${PROJECT_NAME} SHARED
+	${${PROJECT_NAME}_headers}
+	${${PROJECT_NAME}_sources})
 	
-elseif(UNIX)
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++0x")
-	set(METASIM_LIB "SHARED")
+add_library(${PROJECT_NAME}_STATIC STATIC
+	${${PROJECT_NAME}_headers}
+	${${PROJECT_NAME}_sources})
+
+
+# Install options
+# ------------------------------
+install(TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_STATIC
+	EXPORT "${PROJECT_NAME}-targets"
+	RUNTIME DESTINATION bin
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION lib/static)
 	
-elseif(WIN32)
-	set(METASIM_LIB "STATIC")
+install(EXPORT ${PROJECT_NAME}-targets
+	DESTINATION lib)
 
-endif()
-
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
-
-# Create a library called "metasim" which includes the source files.
-add_library(METASIM ${METASIM_LIB} basestat.cpp entity.cpp genericvar.cpp
-  regvar.cpp strtoken.cpp trace.cpp debugstream.cpp event.cpp
-  randomvar.cpp simul.cpp tick.cpp)
+install(FILES ${${PROJECT_NAME}_headers}
+	DESTINATION include)
