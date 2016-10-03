@@ -1,0 +1,64 @@
+\hypertarget{classSink}{}\section{Sink Class Reference}
+\label{classSink}\index{Sink@{Sink}}
+
+
+{\ttfamily \#include $<$queue.\+hpp$>$}
+
+
+
+Inheritance diagram for Sink\+:
+% FIG 0
+
+
+Collaboration diagram for Sink\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sink} (const char $\ast$n)\hypertarget{classSink_affe901a340efd99f7dccdf7b544c1fa4}{}\label{classSink_affe901a340efd99f7dccdf7b544c1fa4}
+
+\item 
+virtual void {\bfseries put} ()\hypertarget{classSink_a5655befd902c442853a4786d6227186e}{}\label{classSink_a5655befd902c442853a4786d6227186e}
+
+\item 
+virtual void \hyperlink{classSink_a39d08501b759e325aec611e6fc9ef851}{new\+Run} ()
+\item 
+virtual void \hyperlink{classSink_a275769d09eaf4bbdb2a5fae38c37aa92}{end\+Run} ()
+\item 
+virtual void {\bfseries print} ()\hypertarget{classSink_a9cd8318c717c1b7f787e4a523ca654bb}{}\label{classSink_a9cd8318c717c1b7f787e4a523ca654bb}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class models a sink. The put method does nothing else than recording how many packet have been consumed since the beginning. 
+
+\subsection{Member Function Documentation}
+\index{Sink@{Sink}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Sink@{Sink}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sink\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classSink_a275769d09eaf4bbdb2a5fae38c37aa92}{}\label{classSink_a275769d09eaf4bbdb2a5fae38c37aa92}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classSink_a275769d09eaf4bbdb2a5fae38c37aa92}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Reimplemented from \hyperlink{classNode_a9bee9183d5723f5565d97db1005c4ef6}{Node}.
+
+\index{Sink@{Sink}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Sink@{Sink}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sink\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classSink_a39d08501b759e325aec611e6fc9ef851}{}\label{classSink_a39d08501b759e325aec611e6fc9ef851}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classSink_a39d08501b759e325aec611e6fc9ef851}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Reimplemented from \hyperlink{classNode_a7154231b573b4f86f200b890b580cc14}{Node}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/queue/queue.\+hpp\end{DoxyCompactItemize}

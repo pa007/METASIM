@@ -1,0 +1,141 @@
+\hypertarget{classNode}{}\section{Node Class Reference}
+\label{classNode}\index{Node@{Node}}
+
+
+{\ttfamily \#include $<$queue.\+hpp$>$}
+
+
+
+Inheritance diagram for Node\+:
+% FIG 0
+
+
+Collaboration diagram for Node\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Node} (string const \&name)\hypertarget{classNode_a63d040cf5e69258d36138057131e6223}{}\label{classNode_a63d040cf5e69258d36138057131e6223}
+
+\item 
+\hyperlink{classNetInterface}{Net\+Interface} $\ast$ {\bfseries get\+Net\+Interface} ()\hypertarget{classNode_a367cc1b357667e0517259a5955fed5d4}{}\label{classNode_a367cc1b357667e0517259a5955fed5d4}
+
+\item 
+void {\bfseries set\+Net\+Interface} (\hyperlink{classNetInterface}{Net\+Interface} \&n)\hypertarget{classNode_ad764157ae91279ab80f272f6f2849827}{}\label{classNode_ad764157ae91279ab80f272f6f2849827}
+
+\item 
+void {\bfseries add\+Dest\+Node} (\hyperlink{classNode}{Node} \&n)\hypertarget{classNode_aa9ca13bfe768dc01f64a0512345224d8}{}\label{classNode_aa9ca13bfe768dc01f64a0512345224d8}
+
+\item 
+void {\bfseries set\+Interval} (std\+::auto\+\_\+ptr$<$ \hyperlink{classMetaSim_1_1RandomVar}{Meta\+Sim\+::\+Random\+Var} $>$ i)\hypertarget{classNode_a373a4311166dcc21eeae3cb68d87d02e}{}\label{classNode_a373a4311166dcc21eeae3cb68d87d02e}
+
+\item 
+void {\bfseries on\+Message\+Received} (\hyperlink{classMessage}{Message} $\ast$m)\hypertarget{classNode_aed0195e31166074c37aa64b8acf39d0c}{}\label{classNode_aed0195e31166074c37aa64b8acf39d0c}
+
+\item 
+void {\bfseries on\+Receive} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$e)\hypertarget{classNode_a7099e1ad3fdd0737334243452aeed394}{}\label{classNode_a7099e1ad3fdd0737334243452aeed394}
+
+\item 
+void {\bfseries on\+Send} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$e)\hypertarget{classNode_a5d78ceb9ef8fe8a3f0a89a7dd3409ce0}{}\label{classNode_a5d78ceb9ef8fe8a3f0a89a7dd3409ce0}
+
+\item 
+void \hyperlink{classNode_a7154231b573b4f86f200b890b580cc14}{new\+Run} ()
+\item 
+void \hyperlink{classNode_a9bee9183d5723f5565d97db1005c4ef6}{end\+Run} ()
+\item 
+{\bfseries Node} (const char $\ast$n)\hypertarget{classNode_a010914b8afc5679f8c27944caf4ac382}{}\label{classNode_a010914b8afc5679f8c27944caf4ac382}
+
+\item 
+virtual void {\bfseries put} ()=0\hypertarget{classNode_a574e741091ee2134958d06d815fa2178}{}\label{classNode_a574e741091ee2134958d06d815fa2178}
+
+\item 
+virtual void \hyperlink{classNode_a91735637f2d85d4dfd1bc6e39e12e624}{new\+Run} ()
+\item 
+virtual void \hyperlink{classNode_a9c61e469055fd886848d966ace657888}{end\+Run} ()
+\item 
+virtual void {\bfseries print} ()\hypertarget{classNode_ad0dbce835cd003bf45b0d4aa680cb411}{}\label{classNode_ad0dbce835cd003bf45b0d4aa680cb411}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1GEvent}{Meta\+Sim\+::\+G\+Event}$<$ \hyperlink{classNode}{Node} $>$ {\bfseries \+\_\+recv\+\_\+evt}\hypertarget{classNode_ae46080e3ecc889e2f1fca5a9df09fb1a}{}\label{classNode_ae46080e3ecc889e2f1fca5a9df09fb1a}
+
+\item 
+\hyperlink{classMetaSim_1_1GEvent}{Meta\+Sim\+::\+G\+Event}$<$ \hyperlink{classNode}{Node} $>$ {\bfseries \+\_\+send\+\_\+evt}\hypertarget{classNode_a1093886ba86e3794c1bad229a51ccde3}{}\label{classNode_a1093886ba86e3794c1bad229a51ccde3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classNode}{Node} class represents a generic node in the system. A node can be a sink, a source, or a queue. It has a pure virtual method, {\itshape put()}, that inserts a packet in the node. 
+
+\subsection{Member Function Documentation}
+\index{Node@{Node}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Node@{Node}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Node\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classNode_a9c61e469055fd886848d966ace657888}{}\label{classNode_a9c61e469055fd886848d966ace657888}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classNode_a9bee9183d5723f5565d97db1005c4ef6}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_aaf0dfabd7805ec027aa46b9b94a87e5b}{Meta\+Sim\+::\+Entity}.
+
+
+
+Reimplemented in \hyperlink{classQueue_ad197c6eafd8e04ae2c55aae7efde138b}{Queue}, \hyperlink{classSource_a0d2c0f43c2acdaa1abe06b2d83cf3a48}{Source}, and \hyperlink{classSink_a275769d09eaf4bbdb2a5fae38c37aa92}{Sink}.
+
+\index{Node@{Node}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Node@{Node}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classNode_a9bee9183d5723f5565d97db1005c4ef6}{}\label{classNode_a9bee9183d5723f5565d97db1005c4ef6}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classNode_a9bee9183d5723f5565d97db1005c4ef6}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_aaf0dfabd7805ec027aa46b9b94a87e5b}{Meta\+Sim\+::\+Entity}.
+
+
+
+Reimplemented in \hyperlink{classQueue_ad197c6eafd8e04ae2c55aae7efde138b}{Queue}, \hyperlink{classSource_a0d2c0f43c2acdaa1abe06b2d83cf3a48}{Source}, and \hyperlink{classSink_a275769d09eaf4bbdb2a5fae38c37aa92}{Sink}.
+
+\index{Node@{Node}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Node@{Node}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Node\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classNode_a91735637f2d85d4dfd1bc6e39e12e624}{}\label{classNode_a91735637f2d85d4dfd1bc6e39e12e624}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classNode_a7154231b573b4f86f200b890b580cc14}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_a8d146c2ea3472c964f84cf20880ac0c9}{Meta\+Sim\+::\+Entity}.
+
+
+
+Reimplemented in \hyperlink{classQueue_a130518a0de553ebf8c9f06b838a818ae}{Queue}, \hyperlink{classSource_ac93437b75678d35efaf8b92cdf0092fa}{Source}, and \hyperlink{classSink_a39d08501b759e325aec611e6fc9ef851}{Sink}.
+
+\index{Node@{Node}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Node@{Node}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Node\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classNode_a7154231b573b4f86f200b890b580cc14}{}\label{classNode_a7154231b573b4f86f200b890b580cc14}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classNode_a7154231b573b4f86f200b890b580cc14}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_a8d146c2ea3472c964f84cf20880ac0c9}{Meta\+Sim\+::\+Entity}.
+
+
+
+Reimplemented in \hyperlink{classQueue_a130518a0de553ebf8c9f06b838a818ae}{Queue}, \hyperlink{classSource_ac93437b75678d35efaf8b92cdf0092fa}{Source}, and \hyperlink{classSink_a39d08501b759e325aec611e6fc9ef851}{Sink}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+examples/eth/node.\+hpp\item 
+examples/queue/queue.\+hpp\item 
+examples/eth/node.\+cpp\end{DoxyCompactItemize}

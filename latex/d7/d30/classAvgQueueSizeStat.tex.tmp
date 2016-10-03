@@ -1,0 +1,28 @@
+\hypertarget{classAvgQueueSizeStat}{}\section{Avg\+Queue\+Size\+Stat Class Reference}
+\label{classAvgQueueSizeStat}\index{Avg\+Queue\+Size\+Stat@{Avg\+Queue\+Size\+Stat}}
+
+
+Inheritance diagram for Avg\+Queue\+Size\+Stat\+:
+% FIG 0
+
+
+Collaboration diagram for Avg\+Queue\+Size\+Stat\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Avg\+Queue\+Size\+Stat} (\hyperlink{classQueue}{Queue} \&q, const char $\ast$n)\hypertarget{classAvgQueueSizeStat_a0fd3d115922749b9ce79c1abf998ef22}{}\label{classAvgQueueSizeStat_a0fd3d115922749b9ce79c1abf998ef22}
+
+\item 
+void {\bfseries probe} (\hyperlink{classSource_1_1ProduceEvent}{Source\+::\+Produce\+Event} \&e)\hypertarget{classAvgQueueSizeStat_ac12bc441839e8997021393d7dc0e3de5}{}\label{classAvgQueueSizeStat_ac12bc441839e8997021393d7dc0e3de5}
+
+\item 
+virtual void {\bfseries attach} (\hyperlink{classSource}{Source} $\ast$n)\hypertarget{classAvgQueueSizeStat_aa78039a78b2a18767ade2fc0f99e1a65}{}\label{classAvgQueueSizeStat_aa78039a78b2a18767ade2fc0f99e1a65}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/queue/queue.\+hpp\end{DoxyCompactItemize}

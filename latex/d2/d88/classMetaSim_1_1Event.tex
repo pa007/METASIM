@@ -1,0 +1,308 @@
+\hypertarget{classMetaSim_1_1Event}{}\section{Meta\+Sim\+:\+:Event Class Reference}
+\label{classMetaSim_1_1Event}\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+
+
+{\ttfamily \#include $<$event.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Event\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMetaSim_1_1Event_1_1Exc}{Exc}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1Event_a23c5dbc772857f44d0b6d7d1cad96e7b}{Event} (int p=\hyperlink{classMetaSim_1_1Event_a93a8a4b3c1db0fdd2fadd7345f0b8c42}{\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY})
+\item 
+virtual \hyperlink{classMetaSim_1_1Event_a7a72fa23967ca550df91a0de8237d761}{$\sim$\+Event} ()\hypertarget{classMetaSim_1_1Event_a7a72fa23967ca550df91a0de8237d761}{}\label{classMetaSim_1_1Event_a7a72fa23967ca550df91a0de8237d761}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classMetaSim_1_1Event_adc72458c7ea70de9f0c5420f5c66da38}{post} (\hyperlink{classMetaSim_1_1Tick}{Tick} my\+Time, bool disp=false)  throw (\+Exc, Base\+Exc)
+\item 
+void \hyperlink{classMetaSim_1_1Event_a91bd2cdec52ef9c4c5d37f88bafc61f8}{process} (bool disp=false)
+\item 
+void \hyperlink{classMetaSim_1_1Event_aa6d5f03efdac6b23021db1356e366c06}{drop} ()
+\item 
+int \hyperlink{classMetaSim_1_1Event_afa08e9ffb49a6a04844637ee8fde19a9}{get\+Priority} () const 
+\item 
+void \hyperlink{classMetaSim_1_1Event_ab6d9e0db7624820e6a42516ddd49fa16}{set\+Priority} (int p)
+\item 
+void \hyperlink{classMetaSim_1_1Event_a3ead7ca3d7f1ebb7ea4eb2e3b8a3f509}{restore\+Priority} ()
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \hyperlink{classMetaSim_1_1Event_a2f95f50d8b12694b31ee75acd974f9c3}{get\+Time} () const 
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \hyperlink{classMetaSim_1_1Event_abe006d0e571f373db76db13f72148d97}{get\+Last\+Time} () const 
+\item 
+bool \hyperlink{classMetaSim_1_1Event_a272d8617d3d9c5e89b5e78aae6845dd0}{is\+Disposable} ()
+\item 
+bool {\bfseries is\+In\+Queue} ()\hypertarget{classMetaSim_1_1Event_a69a950f4b4ba615e3d5aa9496f9077c2}{}\label{classMetaSim_1_1Event_a69a950f4b4ba615e3d5aa9496f9077c2}
+
+\item 
+void \hyperlink{classMetaSim_1_1Event_a03151f618312378f65fe0b96a63dc4c9}{add\+Stat} (\hyperlink{classMetaSim_1_1BaseStat}{Base\+Stat} $\ast$act\+Stat)
+\item 
+void \hyperlink{classMetaSim_1_1Event_a5097d35dd8ef7d6b1485cdd12d1bbb4e}{add\+Particle} (\hyperlink{classMetaSim_1_1ParticleInterface}{Particle\+Interface} $\ast$s)
+\item 
+void \hyperlink{classMetaSim_1_1Event_a66807c7d220a17e1d1662110a6c968ab}{add\+Trace} (\hyperlink{classMetaSim_1_1Trace}{Trace} $\ast$t)
+\item 
+void \hyperlink{classMetaSim_1_1Event_afdad9f12b7b4632903902cc83f877333}{action} ()
+\item 
+virtual void \hyperlink{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{doit} ()=0
+\item 
+virtual void \hyperlink{classMetaSim_1_1Event_ab0535c5bd6c98a7ffd26474a26065752}{print} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMetaSim_1_1Event}{Event} $\ast$ \hyperlink{classMetaSim_1_1Event_ac73548bf18f2946b6856e539f0afbfd0}{get\+First} ()
+\item 
+static void \hyperlink{classMetaSim_1_1Event_a1ea1abdb4ff60e7ad3f7ac10fa47f953}{print\+Queue} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classMetaSim_1_1Event_a93a8a4b3c1db0fdd2fadd7345f0b8c42}{\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY} = 8
+\item 
+static const int {\bfseries \+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY} = 0\hypertarget{classMetaSim_1_1Event_a8b7c02ea65ac1cd53708fde32d603cc7}{}\label{classMetaSim_1_1Event_a8b7c02ea65ac1cd53708fde32d603cc7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMetaSim_1_1Event_a15934fcf88a1452b69c6300c2c580c3e}{set\+Time} (\hyperlink{classMetaSim_1_1Tick}{Tick} act\+Time)  throw (\+Exc)
+\item 
+\hyperlink{classMetaSim_1_1Event_ace1433aed54a96f817be09e95fddd10d}{Event} (const \hyperlink{classMetaSim_1_1Event}{Event} \&e)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classMetaSim_1_1Event_aba0334f8032e55737e7a7121e183ae88}{\+\_\+disposable}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The basic event class. It models an event in the simulator\+: contains all the basic methods for handling an event.
+
+To define a new \char`\"{}type\char`\"{} of events in your system model, you need to derive a class from this, overriding the virtual \hyperlink{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{doit()} method.
+
+This class also inclides a static qevent queue, where all \char`\"{}active\char`\"{} events are enqueued. To insert an event in the queue, you can call the \hyperlink{classMetaSim_1_1Event_adc72458c7ea70de9f0c5420f5c66da38}{post()} method specyfing a triggering time. Events are ordered in the queue by triggering time. In case of two events with the same triggering time, events are ordered by priority. In fact, it is also possible to specify a priority for every event object. The priority is for the object, and not for the class!
+
+When an event is \char`\"{}triggered\char`\"{} in the simulation, its \hyperlink{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{doit()} method is invoked. In most of the cases, the \hyperlink{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{doit()} method simply calls a method of an entity, which will be informally called \char`\"{}handler\char`\"{} of the event.
+
+In case the \hyperlink{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{doit()} method {\bfseries only} calls the appropriate event handler, you can use the template class G\+Event$<$\+X$>$ instead of deriving a new class.
+
+An event can have a list of statistical objects. These are objects that are used to collect statistics on the system. See \hyperlink{classMetaSim_1_1BaseStat}{Base\+Stat} for more details.
+
+Finally, and event has a list of tracing objects. These are used to trace the evolution of the system for analysing it later. See \hyperlink{classMetaSim_1_1Trace}{Trace} class for more details.
+
+\begin{DoxySeeAlso}{See also}
+G\+Event$<$\+X$>$ 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!Event@{Event}}
+\index{Event@{Event}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{Event(const Event \&e)}{Event(const Event &e)}}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Sim\+::\+Event\+::\+Event (
+\begin{DoxyParamCaption}
+\item[{const {\bf Event} \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMetaSim_1_1Event_ace1433aed54a96f817be09e95fddd10d}{}\label{classMetaSim_1_1Event_ace1433aed54a96f817be09e95fddd10d}
+Copy constructor. This is defined to allow dynamic event creation using another event as a prototype. Statistics and traces are copied. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!Event@{Event}}
+\index{Event@{Event}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{Event(int p=\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y)}{Event(int p=_DEFAULT_PRIORITY)}}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Sim\+::\+Event\+::\+Event (
+\begin{DoxyParamCaption}
+\item[{int}]{p = {\ttfamily {\bf \+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1Event_a23c5dbc772857f44d0b6d7d1cad96e7b}{}\label{classMetaSim_1_1Event_a23c5dbc772857f44d0b6d7d1cad96e7b}
+Contructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \hyperlink{classMetaSim_1_1Event}{Event} priority\\
+\hline
+\end{DoxyParams}
+Constructor for \hyperlink{classMetaSim_1_1Event}{Event}. 
+
+\subsection{Member Function Documentation}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!action@{action}}
+\index{action@{action}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{action()}{action()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1Event_afdad9f12b7b4632903902cc83f877333}{}\label{classMetaSim_1_1Event_afdad9f12b7b4632903902cc83f877333}
+This method is called when the event is triggered. It contains part of the basic code of the simulation engine. For this reason, it should be overloaded only in very, very, special cases!! Do not touch if you don\textquotesingle{}t know what you are doing. Also, this method should never be invoked by any entity.
+
+It can throw any type of exceptions, in principle, so I can\textquotesingle{}t specify any particular type of exception in the interface \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!add\+Particle@{add\+Particle}}
+\index{add\+Particle@{add\+Particle}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{add\+Particle(\+Particle\+Interface $\ast$s)}{addParticle(ParticleInterface *s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::add\+Particle (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle\+Interface} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1Event_a5097d35dd8ef7d6b1485cdd12d1bbb4e}{}\label{classMetaSim_1_1Event_a5097d35dd8ef7d6b1485cdd12d1bbb4e}
+Add a new particle to this event. This is the new way to add statistics and traces to this object. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!add\+Stat@{add\+Stat}}
+\index{add\+Stat@{add\+Stat}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{add\+Stat(\+Base\+Stat $\ast$act\+Stat)}{addStat(BaseStat *actStat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::add\+Stat (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Stat} $\ast$}]{act\+Stat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_a03151f618312378f65fe0b96a63dc4c9}{}\label{classMetaSim_1_1Event_a03151f618312378f65fe0b96a63dc4c9}
+Add a new stat probe to this event. All the statistical objects that are related to this event will be invoked when the event is triggered, but remember, A\+F\+T\+ER the event is processed!
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]deprecated, will be removed, and substituted by a different kind of mechanisms. \end{DoxyRefDesc}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!add\+Trace@{add\+Trace}}
+\index{add\+Trace@{add\+Trace}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{add\+Trace(\+Trace $\ast$t)}{addTrace(Trace *t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::add\+Trace (
+\begin{DoxyParamCaption}
+\item[{{\bf Trace} $\ast$}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_a66807c7d220a17e1d1662110a6c968ab}{}\label{classMetaSim_1_1Event_a66807c7d220a17e1d1662110a6c968ab}
+Add a new trace probe to this event. It is useful for defining different kinds of tracing all at the same time. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!doit@{doit}}
+\index{doit@{doit}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{doit()=0}{doit()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Event\+::doit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{}\label{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}
+Must be defined for every derived class. This method is called from the \hyperlink{classMetaSim_1_1Event_afdad9f12b7b4632903902cc83f877333}{action()} method. 
+
+Implemented in \hyperlink{classQueue_1_1ServiceEvent_a5f9784f40ba49e3cbe9c2138ba3f3f35}{Queue\+::\+Service\+Event}, \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{Meta\+Sim\+::\+G\+Event$<$ X $>$}, \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{Meta\+Sim\+::\+G\+Event$<$ Node $>$}, \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{Meta\+Sim\+::\+G\+Event$<$ Ethernet\+Interface $>$}, \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{Meta\+Sim\+::\+G\+Event$<$ My\+Entity $>$}, \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{Meta\+Sim\+::\+G\+Event$<$ Ethernet\+Link $>$}, \hyperlink{classSource_1_1ProduceEvent_aaf526e61dfabbe6fefa85c38d9092d5e}{Source\+::\+Produce\+Event}, and \hyperlink{classJumpEvent_a60ee7dadd640b0323295315095bd3af3}{Jump\+Event}.
+
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!drop@{drop}}
+\index{drop@{drop}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{drop()}{drop()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::drop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1Event_aa6d5f03efdac6b23021db1356e366c06}{}\label{classMetaSim_1_1Event_aa6d5f03efdac6b23021db1356e366c06}
+Drop the event from the event queue. The event is simply extracted from the queue, and hence will not be processed, but it is not destroyed. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!get\+First@{get\+First}}
+\index{get\+First@{get\+First}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{get\+First()}{getFirst()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Event}$\ast$ Meta\+Sim\+::\+Event\+::get\+First (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classMetaSim_1_1Event_ac73548bf18f2946b6856e539f0afbfd0}{}\label{classMetaSim_1_1Event_ac73548bf18f2946b6856e539f0afbfd0}
+Returns the first event in the event queue. This function is used by the main simulation engine and should never be called directly by any other object. The event is not extracted from the queue \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!get\+Last\+Time@{get\+Last\+Time}}
+\index{get\+Last\+Time@{get\+Last\+Time}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{get\+Last\+Time() const }{getLastTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tick} Meta\+Sim\+::\+Event\+::get\+Last\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_abe006d0e571f373db76db13f72148d97}{}\label{classMetaSim_1_1Event_abe006d0e571f373db76db13f72148d97}
+Return the last time in which event was triggered. Basically it always is the same as \hyperlink{classMetaSim_1_1Event_a2f95f50d8b12694b31ee75acd974f9c3}{get\+Time()}. However, consider that, if the event is re-\/posted as a consequence of the event\+Handler() processing, if the statistical probe use \hyperlink{classMetaSim_1_1Event_a2f95f50d8b12694b31ee75acd974f9c3}{get\+Time()}, it could read the new posting time! This happens because statistical probes are processed A\+F\+T\+ER the event\+Handler!! {\itshape last\+Time} is set in the \hyperlink{classMetaSim_1_1Event_afdad9f12b7b4632903902cc83f877333}{action()} routine to the current time of the event; the event\+Handler may repost the event altering the time field, but the user may access the actual time in which event has been triggered with \hyperlink{classMetaSim_1_1Event_abe006d0e571f373db76db13f72148d97}{get\+Last\+Time()}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMetaSim_1_1Event_a2f95f50d8b12694b31ee75acd974f9c3}{get\+Time} 
+\end{DoxySeeAlso}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!get\+Priority@{get\+Priority}}
+\index{get\+Priority@{get\+Priority}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{get\+Priority() const }{getPriority() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Meta\+Sim\+::\+Event\+::get\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_afa08e9ffb49a6a04844637ee8fde19a9}{}\label{classMetaSim_1_1Event_afa08e9ffb49a6a04844637ee8fde19a9}
+Returns the event priority. It is a identifier for the event priority. In the old version, events were distinguished by their class. For simplicity we decided to introduce this identifier. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{get\+Time() const }{getTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tick} Meta\+Sim\+::\+Event\+::get\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_a2f95f50d8b12694b31ee75acd974f9c3}{}\label{classMetaSim_1_1Event_a2f95f50d8b12694b31ee75acd974f9c3}
+Returns the event time. Warning\+: if you try to get this field after the event has been triggered, the field could be inconsistent. Use get\+Last\+Time instead.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMetaSim_1_1Event_abe006d0e571f373db76db13f72148d97}{get\+Last\+Time}. 
+\end{DoxySeeAlso}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!is\+Disposable@{is\+Disposable}}
+\index{is\+Disposable@{is\+Disposable}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{is\+Disposable()}{isDisposable()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Meta\+Sim\+::\+Event\+::is\+Disposable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_a272d8617d3d9c5e89b5e78aae6845dd0}{}\label{classMetaSim_1_1Event_a272d8617d3d9c5e89b5e78aae6845dd0}
+Returns the value of the disposable flag Indicates if the event has to be destroyed after bein processed. In fact, if an event has been created dinamically, must be destroyed only after it has been processed. This is done by the \hyperlink{classMetaSim_1_1Simulation}{Simulation} class, only if the following flas is true.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classMetaSim_1_1Event_adc72458c7ea70de9f0c5420f5c66da38}{post} 
+\end{DoxySeeAlso}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!post@{post}}
+\index{post@{post}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{post(\+Tick my\+Time, bool disp=false)}{post(Tick myTime, bool disp=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::post (
+\begin{DoxyParamCaption}
+\item[{{\bf Tick}}]{my\+Time, }
+\item[{bool}]{disp = {\ttfamily false}}
+\end{DoxyParamCaption}
+) throw  {\bf Exc}, {\bf Base\+Exc}) }\hypertarget{classMetaSim_1_1Event_adc72458c7ea70de9f0c5420f5c66da38}{}\label{classMetaSim_1_1Event_adc72458c7ea70de9f0c5420f5c66da38}
+Inserts the event into the event queue. If the event is already in the event queue, an exception is raised. Then, the event will be processed at time my\+Time. It is not possible to post an event in the past, but is possible to post an event in the present\+: that is, my\+Time must be greater than or equal to the current simulation time, otherwise an exception will be raised. If the event is marked disposable, the main simulation loop will delete it after it has been processed. In practice, by setting disp to true, we are giving ownership of the object to the \hyperlink{classMetaSim_1_1Simulation}{Simulation} engine, which will destroy the object after using it.
+
+Warning!! Never set disp = true for a statically declared event (i.\+e., an event that was not created with new) unless you want a good old core dump.
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Time} & triggering time for the event. \\
+\hline
+{\em disp} & set it to true if the event object must be disposed. \\
+\hline
+\end{DoxyParams}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!print@{print}}
+\index{print@{print}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMetaSim_1_1Event_ab0535c5bd6c98a7ffd26474a26065752}{}\label{classMetaSim_1_1Event_ab0535c5bd6c98a7ffd26474a26065752}
+for debugging. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!print\+Queue@{print\+Queue}}
+\index{print\+Queue@{print\+Queue}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{print\+Queue()}{printQueue()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Meta\+Sim\+::\+Event\+::print\+Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classMetaSim_1_1Event_a1ea1abdb4ff60e7ad3f7ac10fa47f953}{}\label{classMetaSim_1_1Event_a1ea1abdb4ff60e7ad3f7ac10fa47f953}
+for debugging \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!process@{process}}
+\index{process@{process}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{process(bool disp=false)}{process(bool disp=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::process (
+\begin{DoxyParamCaption}
+\item[{bool}]{disp = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1Event_a91bd2cdec52ef9c4c5d37f88bafc61f8}{}\label{classMetaSim_1_1Event_a91bd2cdec52ef9c4c5d37f88bafc61f8}
+Processes the event immediately. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!restore\+Priority@{restore\+Priority}}
+\index{restore\+Priority@{restore\+Priority}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{restore\+Priority()}{restorePriority()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::restore\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_a3ead7ca3d7f1ebb7ea4eb2e3b8a3f509}{}\label{classMetaSim_1_1Event_a3ead7ca3d7f1ebb7ea4eb2e3b8a3f509}
+Restore the standard priority (the one defined in the constructor). \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!set\+Priority@{set\+Priority}}
+\index{set\+Priority@{set\+Priority}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{set\+Priority(int p)}{setPriority(int p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::set\+Priority (
+\begin{DoxyParamCaption}
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Event_ab6d9e0db7624820e6a42516ddd49fa16}{}\label{classMetaSim_1_1Event_ab6d9e0db7624820e6a42516ddd49fa16}
+Set the event priority. It is a identifier for the event priority. The lower the number, the higher the priority. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{set\+Time(\+Tick act\+Time)}{setTime(Tick actTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Event\+::set\+Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Tick}}]{act\+Time}
+\end{DoxyParamCaption}
+) throw  {\bf Exc}) \hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMetaSim_1_1Event_a15934fcf88a1452b69c6300c2c580c3e}{}\label{classMetaSim_1_1Event_a15934fcf88a1452b69c6300c2c580c3e}
+Checks that the event is not queued, and set the \+\_\+time field; 
+
+\subsection{Field Documentation}
+\index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY@{\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}
+\index{\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY@{\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY}{_DEFAULT_PRIORITY}}]{\setlength{\rightskip}{0pt plus 5cm}const int Meta\+Sim\+::\+Event\+::\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY = 8\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classMetaSim_1_1Event_a93a8a4b3c1db0fdd2fadd7345f0b8c42}{}\label{classMetaSim_1_1Event_a93a8a4b3c1db0fdd2fadd7345f0b8c42}
+The default priority for an event is 8. The lower this number the higher the priority. \index{Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}!\+\_\+disposable@{\+\_\+disposable}}
+\index{\+\_\+disposable@{\+\_\+disposable}!Meta\+Sim\+::\+Event@{Meta\+Sim\+::\+Event}}
+\subsubsection[{\texorpdfstring{\+\_\+disposable}{_disposable}}]{\setlength{\rightskip}{0pt plus 5cm}bool Meta\+Sim\+::\+Event\+::\+\_\+disposable\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMetaSim_1_1Event_aba0334f8032e55737e7a7121e183ae88}{}\label{classMetaSim_1_1Event_aba0334f8032e55737e7a7121e183ae88}
+Indicates if the event has to be destroyed after bein processed. Normally, this flag is set to false. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/event.\+hpp\item 
+src/event.\+cpp\end{DoxyCompactItemize}

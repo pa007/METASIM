@@ -1,0 +1,484 @@
+\hypertarget{group__metasim__stat}{}\section{Statistical classes}
+\label{group__metasim__stat}\index{Statistical classes@{Statistical classes}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMetaSim_1_1BaseStat_1_1Exc}{Meta\+Sim\+::\+Base\+Stat\+::\+Exc}
+\item 
+class \hyperlink{classMetaSim_1_1BaseStat}{Meta\+Sim\+::\+Base\+Stat}
+\begin{DoxyCompactList}\small\item\em The basic statistical class. \end{DoxyCompactList}\item 
+class \hyperlink{classMetaSim_1_1StatMax}{Meta\+Sim\+::\+Stat\+Max}
+\begin{DoxyCompactList}\small\item\em Computes the max value. \end{DoxyCompactList}\item 
+class \hyperlink{classMetaSim_1_1StatMin}{Meta\+Sim\+::\+Stat\+Min}
+\begin{DoxyCompactList}\small\item\em Computes the min value. \end{DoxyCompactList}\item 
+class \hyperlink{classMetaSim_1_1StatMean}{Meta\+Sim\+::\+Stat\+Mean}
+\begin{DoxyCompactList}\small\item\em Computes a mean value X\+\_\+m = (Sigma\{X\+\_\+i\}i=1,N)/N. \end{DoxyCompactList}\item 
+class \hyperlink{classMetaSim_1_1StatSqrMean}{Meta\+Sim\+::\+Stat\+Sqr\+Mean}
+\item 
+class \hyperlink{classMetaSim_1_1StatCount}{Meta\+Sim\+::\+Stat\+Count}
+\begin{DoxyCompactList}\small\item\em Counts the number of occurrences of an event. \end{DoxyCompactList}\item 
+class \hyperlink{classMetaSim_1_1StatPercent}{Meta\+Sim\+::\+Stat\+Percent}
+\begin{DoxyCompactList}\small\item\em Computes the percentage of occurrences of an event. \end{DoxyCompactList}\item 
+class \hyperlink{classMetaSim_1_1GnuPlotOutput_1_1Exc}{Meta\+Sim\+::\+Gnu\+Plot\+Output\+::\+Exc}
+\item 
+class \hyperlink{classMetaSim_1_1GnuPlotOutput}{Meta\+Sim\+::\+Gnu\+Plot\+Output}
+\begin{DoxyCompactList}\small\item\em Produces output in gnuplot format. \end{DoxyCompactList}\item 
+class \hyperlink{classMetaSim_1_1TableOutput}{Meta\+Sim\+::\+Table\+Output}
+\item 
+class \hyperlink{classMetaSim_1_1Trace}{Meta\+Sim\+::\+Trace}
+\item 
+class \hyperlink{classMetaSim_1_1TraceAscii}{Meta\+Sim\+::\+Trace\+Ascii}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ Base\+Stat $\ast$ $>$ {\bfseries Meta\+Sim\+::\+Base\+Stat\+::\+List}\hypertarget{group__metasim__stat_ga526dbfb07dff9df4cfcd82445bd3e7ae}{}\label{group__metasim__stat_ga526dbfb07dff9df4cfcd82445bd3e7ae}
+
+\item 
+typedef std\+::vector$<$ double $>$ \hyperlink{group__metasim__stat_ga2bae1d8abdacdd19f279cba4b73f4b7e}{Meta\+Sim\+::\+Base\+Stat\+::\+Experiments}\hypertarget{group__metasim__stat_ga2bae1d8abdacdd19f279cba4b73f4b7e}{}\label{group__metasim__stat_ga2bae1d8abdacdd19f279cba4b73f4b7e}
+
+\begin{DoxyCompactList}\small\item\em array of values, one for each run. \end{DoxyCompactList}\item 
+typedef List\+::const\+\_\+iterator {\bfseries Meta\+Sim\+::\+Base\+Stat\+::iterator}\hypertarget{group__metasim__stat_gad548fda3e3e24991474cbee77f300eac}{}\label{group__metasim__stat_gad548fda3e3e24991474cbee77f300eac}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__metasim__stat_ga4d14ae31bff47d98dc795b118c8b2ccd}{Meta\+Sim\+::\+Base\+Stat\+::\+C\+O\+N\+F\+I\+D\+E\+N\+C\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL} \{ {\bfseries C90} = 90, 
+{\bfseries C95} = 95
+ \}\hypertarget{group__metasim__stat_ga4d14ae31bff47d98dc795b118c8b2ccd}{}\label{group__metasim__stat_ga4d14ae31bff47d98dc795b118c8b2ccd}
+\begin{DoxyCompactList}\small\item\em possible values for the confidence intervals \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Meta\+Sim\+::\+Base\+Stat\+::\+Exc\+::\+Exc} (const std\+::string s=\char`\"{}Unknown Exc\char`\"{}, const std\+::string c=\char`\"{}Base\+Stat\char`\"{}, const std\+::string m=\char`\"{}basestat.\+hpp\char`\"{})\hypertarget{group__metasim__stat_gaf7fcea77b41c9a6f32a88f3a1c68871d}{}\label{group__metasim__stat_gaf7fcea77b41c9a6f32a88f3a1c68871d}
+
+\item 
+void \hyperlink{group__metasim__stat_gac2088baeeca5cfd9d8b6393831118e98}{Meta\+Sim\+::\+Base\+Stat\+::collect} ()
+\item 
+static double \hyperlink{group__metasim__stat_ga2001c33bd7f3a451b279cc0e7be1bcab}{Meta\+Sim\+::\+Base\+Stat\+::get\+\_\+t\+\_\+perc} (double alpha)\hypertarget{group__metasim__stat_ga2001c33bd7f3a451b279cc0e7be1bcab}{}\label{group__metasim__stat_ga2001c33bd7f3a451b279cc0e7be1bcab}
+
+\begin{DoxyCompactList}\small\item\em t-\/student function \end{DoxyCompactList}\item 
+static void \hyperlink{group__metasim__stat_ga4b367dd65c3cbaba03adfc6b2105a4d1}{Meta\+Sim\+::\+Base\+Stat\+::calc\+\_\+t} (int n)\hypertarget{group__metasim__stat_ga4b367dd65c3cbaba03adfc6b2105a4d1}{}\label{group__metasim__stat_ga4b367dd65c3cbaba03adfc6b2105a4d1}
+
+\begin{DoxyCompactList}\small\item\em computes the t-\/student with parameter n. \end{DoxyCompactList}\item 
+static double \hyperlink{group__metasim__stat_ga72c3e88d10989f82926d1e4622a741a2}{Meta\+Sim\+::\+Base\+Stat\+::t\+\_\+student} (int alfa, int dol)\hypertarget{group__metasim__stat_ga72c3e88d10989f82926d1e4622a741a2}{}\label{group__metasim__stat_ga72c3e88d10989f82926d1e4622a741a2}
+
+\begin{DoxyCompactList}\small\item\em returns the t-\/student with parameter alfa and dol. \end{DoxyCompactList}\item 
+\hyperlink{group__metasim__stat_ga53f0b2d86cefc177d2c6c8960fb96ad9}{Meta\+Sim\+::\+Base\+Stat\+::\+Base\+Stat} (std\+::string n=\char`\"{}\char`\"{})\hypertarget{group__metasim__stat_ga53f0b2d86cefc177d2c6c8960fb96ad9}{}\label{group__metasim__stat_ga53f0b2d86cefc177d2c6c8960fb96ad9}
+
+\begin{DoxyCompactList}\small\item\em Constructors\+: enqueues the object in the global stat list. \end{DoxyCompactList}\item 
+static iterator {\bfseries Meta\+Sim\+::\+Base\+Stat\+::begin} ()\hypertarget{group__metasim__stat_gab986c66cdb2b2e4598bae685c6ec566f}{}\label{group__metasim__stat_gab986c66cdb2b2e4598bae685c6ec566f}
+
+\item 
+static iterator {\bfseries Meta\+Sim\+::\+Base\+Stat\+::end} ()\hypertarget{group__metasim__stat_ga5f328eb5ff98ff412da8894e2cb9c90e}{}\label{group__metasim__stat_ga5f328eb5ff98ff412da8894e2cb9c90e}
+
+\item 
+virtual void \hyperlink{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{Meta\+Sim\+::\+Base\+Stat\+::record} (double)=0
+\item 
+virtual void {\bfseries Meta\+Sim\+::\+Base\+Stat\+::init\+Value} ()=0\hypertarget{group__metasim__stat_ga8ada3862dd1e9d622bb3dce50f8c3227}{}\label{group__metasim__stat_ga8ada3862dd1e9d622bb3dce50f8c3227}
+
+\item 
+virtual void \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{Meta\+Sim\+::\+Base\+Stat\+::probe} (Event $\ast$e)
+\item 
+virtual void \hyperlink{group__metasim__stat_gaf5584d4aefc280eb644997fd13f8cd3d}{Meta\+Sim\+::\+Base\+Stat\+::attach} (Entity $\ast$e)
+\item 
+std\+::string \hyperlink{group__metasim__stat_ga4aa54dc810a8178ce3c1bcd13e3f1f00}{Meta\+Sim\+::\+Base\+Stat\+::get\+Name} ()
+\item 
+double \hyperlink{group__metasim__stat_ga1c038c3cad17287ae59680a62e1301a9}{Meta\+Sim\+::\+Base\+Stat\+::get\+Value} ()
+\item 
+double \hyperlink{group__metasim__stat_ga44f5a2cda5f88cf941c1cedbc40c3e19}{Meta\+Sim\+::\+Base\+Stat\+::get\+Last\+Value} ()
+\item 
+double \hyperlink{group__metasim__stat_ga3300f3a76af416db83cff8d67ace7561}{Meta\+Sim\+::\+Base\+Stat\+::get\+Mean} ()\hypertarget{group__metasim__stat_ga3300f3a76af416db83cff8d67ace7561}{}\label{group__metasim__stat_ga3300f3a76af416db83cff8d67ace7561}
+
+\begin{DoxyCompactList}\small\item\em Returns the mean value. \end{DoxyCompactList}\item 
+double \hyperlink{group__metasim__stat_gad2e53ad4a56f37c4d400f3932e9d4671}{Meta\+Sim\+::\+Base\+Stat\+::get\+Variance} ()\hypertarget{group__metasim__stat_gad2e53ad4a56f37c4d400f3932e9d4671}{}\label{group__metasim__stat_gad2e53ad4a56f37c4d400f3932e9d4671}
+
+\begin{DoxyCompactList}\small\item\em Returns the variance. \end{DoxyCompactList}\item 
+double \hyperlink{group__metasim__stat_ga27e74d139c9f265aa0d6427ed2d546f8}{Meta\+Sim\+::\+Base\+Stat\+::get\+Conf\+Interval} (C\+O\+N\+F\+I\+D\+E\+N\+C\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL c=C95)
+\item 
+size\+\_\+t {\bfseries Meta\+Sim\+::\+Base\+Stat\+::get\+Exp\+Num} ()\hypertarget{group__metasim__stat_gadf847dce4dbd4cf08444caa1caa894af}{}\label{group__metasim__stat_gadf847dce4dbd4cf08444caa1caa894af}
+
+\item 
+static void {\bfseries Meta\+Sim\+::\+Base\+Stat\+::print\+All} ()\hypertarget{group__metasim__stat_gaa94a187b46952731b0caa5306da76512}{}\label{group__metasim__stat_gaa94a187b46952731b0caa5306da76512}
+
+\item 
+void {\bfseries Meta\+Sim\+::\+Base\+Stat\+::print} ()\hypertarget{group__metasim__stat_ga27ab96982217cae4c18075aa7d17eb2f}{}\label{group__metasim__stat_ga27ab96982217cae4c18075aa7d17eb2f}
+
+\item 
+static void \hyperlink{group__metasim__stat_gacde8a3231d53a08919f79f6e7de34f14}{Meta\+Sim\+::\+Base\+Stat\+::init} (size\+\_\+t n)
+\item 
+void {\bfseries Meta\+Sim\+::\+Base\+Stat\+::init} ()\hypertarget{group__metasim__stat_ga58c334050705733e8bed8135c783b119}{}\label{group__metasim__stat_ga58c334050705733e8bed8135c783b119}
+
+\item 
+static void \hyperlink{group__metasim__stat_gadf8350d5f8be46ce1ef72e24e4b68fdf}{Meta\+Sim\+::\+Base\+Stat\+::end\+Run} ()
+\item 
+static void \hyperlink{group__metasim__stat_gaba33ca71604bba99e4204f0315079544}{Meta\+Sim\+::\+Base\+Stat\+::new\+Run} ()
+\item 
+static void \hyperlink{group__metasim__stat_ga76adedc2cd26b03eae9274c628472c3b}{Meta\+Sim\+::\+Base\+Stat\+::end\+Sim} ()
+\item 
+static void \hyperlink{group__metasim__stat_ga781ebbe2f6730a933ca4b950a40aa612}{Meta\+Sim\+::\+Base\+Stat\+::set\+Transitory} (Tick t)
+\item 
+static bool \hyperlink{group__metasim__stat_ga056cb5982708aff3ee784116e01b4e46}{Meta\+Sim\+::\+Base\+Stat\+::chk\+Transitory} ()\hypertarget{group__metasim__stat_ga056cb5982708aff3ee784116e01b4e46}{}\label{group__metasim__stat_ga056cb5982708aff3ee784116e01b4e46}
+
+\begin{DoxyCompactList}\small\item\em check if we are currently inside the transitory \end{DoxyCompactList}\item 
+{\bfseries Meta\+Sim\+::\+Stat\+Max\+::\+Stat\+Max} (std\+::string name=\char`\"{}\char`\"{}, double i=std\+::numeric\+\_\+limits$<$ double $>$\+::min())\hypertarget{group__metasim__stat_ga14f427f356a519b0cb062f04121a459c}{}\label{group__metasim__stat_ga14f427f356a519b0cb062f04121a459c}
+
+\item 
+virtual void \hyperlink{group__metasim__stat_ga6dfddcc795d8681dd33bef7eb4debd8b}{Meta\+Sim\+::\+Stat\+Max\+::record} (double a)
+\item 
+virtual void {\bfseries Meta\+Sim\+::\+Stat\+Max\+::init\+Value} ()\hypertarget{group__metasim__stat_gadbda410e6ad06693ded410a3b018efc8}{}\label{group__metasim__stat_gadbda410e6ad06693ded410a3b018efc8}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Stat\+Min\+::\+Stat\+Min} (std\+::string name=\char`\"{}\char`\"{}, double i=std\+::numeric\+\_\+limits$<$ double $>$\+::max())\hypertarget{group__metasim__stat_ga2575b20f42b10962a26a4bb5451fd33b}{}\label{group__metasim__stat_ga2575b20f42b10962a26a4bb5451fd33b}
+
+\item 
+virtual void \hyperlink{group__metasim__stat_ga420e16228992c9fb54a7a3264e4f87f5}{Meta\+Sim\+::\+Stat\+Min\+::record} (double a)
+\item 
+virtual void {\bfseries Meta\+Sim\+::\+Stat\+Min\+::init\+Value} ()\hypertarget{group__metasim__stat_gaef06e8556f9ab5802fc3fe99b05a2b29}{}\label{group__metasim__stat_gaef06e8556f9ab5802fc3fe99b05a2b29}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Stat\+Mean\+::\+Stat\+Mean} (std\+::string name=\char`\"{}\char`\"{}, double i=0)\hypertarget{group__metasim__stat_ga6614e75e91e5f8b85153ecb24c3fbb40}{}\label{group__metasim__stat_ga6614e75e91e5f8b85153ecb24c3fbb40}
+
+\item 
+virtual void \hyperlink{group__metasim__stat_ga7acbee135dc23bc73135594b3bb03476}{Meta\+Sim\+::\+Stat\+Mean\+::record} (double a)
+\item 
+virtual void {\bfseries Meta\+Sim\+::\+Stat\+Mean\+::init\+Value} ()\hypertarget{group__metasim__stat_gaa47362e5a359e25d5358d840d2392b46}{}\label{group__metasim__stat_gaa47362e5a359e25d5358d840d2392b46}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Stat\+Sqr\+Mean\+::\+Stat\+Sqr\+Mean} (std\+::string name=\char`\"{}\char`\"{}, double i=0)\hypertarget{group__metasim__stat_gaa4d7a741c922fa5f6352930ba9875016}{}\label{group__metasim__stat_gaa4d7a741c922fa5f6352930ba9875016}
+
+\item 
+virtual void {\bfseries Meta\+Sim\+::\+Stat\+Sqr\+Mean\+::init\+Value} ()\hypertarget{group__metasim__stat_gaa43dfad9145a9632bfa6e3ce6f0cc4d5}{}\label{group__metasim__stat_gaa43dfad9145a9632bfa6e3ce6f0cc4d5}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Stat\+Count\+::\+Stat\+Count} (std\+::string name=\char`\"{}\char`\"{}, double i=0)\hypertarget{group__metasim__stat_ga1997cfd009810f55f03b56d69e7f2ff9}{}\label{group__metasim__stat_ga1997cfd009810f55f03b56d69e7f2ff9}
+
+\item 
+virtual void \hyperlink{group__metasim__stat_gaaafe9f379041d46cbe705d26aafc5c67}{Meta\+Sim\+::\+Stat\+Count\+::record} (double increment)
+\item 
+virtual void {\bfseries Meta\+Sim\+::\+Stat\+Count\+::init\+Value} ()\hypertarget{group__metasim__stat_gae8710a5d4a94cdd797524d17e613ff87}{}\label{group__metasim__stat_gae8710a5d4a94cdd797524d17e613ff87}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Stat\+Percent\+::\+Stat\+Percent} (std\+::string name=\char`\"{}\char`\"{}, double i=0)\hypertarget{group__metasim__stat_ga58e41fe29f481a35d1e7c5de39de9009}{}\label{group__metasim__stat_ga58e41fe29f481a35d1e7c5de39de9009}
+
+\item 
+virtual void \hyperlink{group__metasim__stat_ga6fe4e2066cb72c9eb74c44d5e700cc86}{Meta\+Sim\+::\+Stat\+Percent\+::record} (double value)
+\item 
+virtual void {\bfseries Meta\+Sim\+::\+Stat\+Percent\+::init\+Value} ()\hypertarget{group__metasim__stat_gaeff333bf932f75410bfafeca21e5390f}{}\label{group__metasim__stat_gaeff333bf932f75410bfafeca21e5390f}
+
+\item 
+int {\bfseries Meta\+Sim\+::\+Stat\+Percent\+::get\+Num\+Samples} ()\hypertarget{group__metasim__stat_ga329cb8a42138f0d111799a238b91aad8}{}\label{group__metasim__stat_ga329cb8a42138f0d111799a238b91aad8}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Gnu\+Plot\+Output\+::\+Exc\+::\+Exc} (const std\+::string s, const std\+::string c=\char`\"{}Gnu\+Plot\+Output\char`\"{}, const std\+::string m=\char`\"{}basestat.\+hpp\char`\"{})\hypertarget{group__metasim__stat_ga74b4126022f20b4b1ba2814f93abdf04}{}\label{group__metasim__stat_ga74b4126022f20b4b1ba2814f93abdf04}
+
+\item 
+static void {\bfseries Meta\+Sim\+::\+Gnu\+Plot\+Output\+::init} ()\hypertarget{group__metasim__stat_ga44313f3eb2a5e3fc92334c6cc7a0282c}{}\label{group__metasim__stat_ga44313f3eb2a5e3fc92334c6cc7a0282c}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries Meta\+Sim\+::\+Gnu\+Plot\+Output\+::write} (const T \&t)\hypertarget{group__metasim__stat_gac04806bf4bfd04d0d19de6ac33255008}{}\label{group__metasim__stat_gac04806bf4bfd04d0d19de6ac33255008}
+
+\item 
+void {\bfseries Meta\+Sim\+::\+Table\+Output\+::init} (std\+::string filename)\hypertarget{group__metasim__stat_ga5f211100da60ecfc5440653e720545fb}{}\label{group__metasim__stat_ga5f211100da60ecfc5440653e720545fb}
+
+\item 
+void {\bfseries Meta\+Sim\+::\+Table\+Output\+::write} (std\+::string message)\hypertarget{group__metasim__stat_ga997f322c6765984e5704baa6282b0685}{}\label{group__metasim__stat_ga997f322c6765984e5704baa6282b0685}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{group__metasim__stat_gadc11fad00a3ef6ab589510c4ed514625}{Meta\+Sim\+::\+Base\+Stat\+::\+\_\+name}\hypertarget{group__metasim__stat_gadc11fad00a3ef6ab589510c4ed514625}{}\label{group__metasim__stat_gadc11fad00a3ef6ab589510c4ed514625}
+
+\begin{DoxyCompactList}\small\item\em name of the stat object \end{DoxyCompactList}\item 
+double \hyperlink{group__metasim__stat_ga64ad3d61015bd5b232df8ae12a5e9b8f}{Meta\+Sim\+::\+Base\+Stat\+::\+\_\+val}\hypertarget{group__metasim__stat_ga64ad3d61015bd5b232df8ae12a5e9b8f}{}\label{group__metasim__stat_ga64ad3d61015bd5b232df8ae12a5e9b8f}
+
+\begin{DoxyCompactList}\small\item\em current computed value (during the run). \end{DoxyCompactList}\item 
+Experiments {\bfseries Meta\+Sim\+::\+Base\+Stat\+::\+\_\+exper}\hypertarget{group__metasim__stat_ga1b3e491a16cf65ce9a5e93b8e23b3853}{}\label{group__metasim__stat_ga1b3e491a16cf65ce9a5e93b8e23b3853}
+
+\item 
+static Tick \hyperlink{group__metasim__stat_gabe2f955eab4756e73d411e41df17cf68}{Meta\+Sim\+::\+Base\+Stat\+::\+\_\+transitory} = 0\hypertarget{group__metasim__stat_gabe2f955eab4756e73d411e41df17cf68}{}\label{group__metasim__stat_gabe2f955eab4756e73d411e41df17cf68}
+
+\begin{DoxyCompactList}\small\item\em lenght of the transitory. \end{DoxyCompactList}\item 
+static bool \hyperlink{group__metasim__stat_gac2cec74a9d6f8990cfb06fcd32327b60}{Meta\+Sim\+::\+Base\+Stat\+::\+\_\+init\+Flag} = false
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Mean\+::\+\_\+ini}\hypertarget{group__metasim__stat_ga6edffbe8938e28d971c4e7f4026c33c3}{}\label{group__metasim__stat_ga6edffbe8938e28d971c4e7f4026c33c3}
+
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Mean\+::\+\_\+count}\hypertarget{group__metasim__stat_gaaaddd915949d343ca10f76ae7a429df5}{}\label{group__metasim__stat_gaaaddd915949d343ca10f76ae7a429df5}
+
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Sqr\+Mean\+::\+\_\+ini}\hypertarget{group__metasim__stat_ga1e8ebaf99cdd6df6ecf160db459be265}{}\label{group__metasim__stat_ga1e8ebaf99cdd6df6ecf160db459be265}
+
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Sqr\+Mean\+::\+\_\+count}\hypertarget{group__metasim__stat_ga813c9f8e174f93f928a14229d6b5cc73}{}\label{group__metasim__stat_ga813c9f8e174f93f928a14229d6b5cc73}
+
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Count\+::\+\_\+ini}\hypertarget{group__metasim__stat_gab3d6ce84aa9374f3d3d6acf262b266e4}{}\label{group__metasim__stat_gab3d6ce84aa9374f3d3d6acf262b266e4}
+
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Percent\+::\+\_\+ini}\hypertarget{group__metasim__stat_gac0c0d0de959d19ef21b0c7409bd9d396}{}\label{group__metasim__stat_gac0c0d0de959d19ef21b0c7409bd9d396}
+
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Percent\+::\+\_\+num}\hypertarget{group__metasim__stat_ga29ff08fe3b1245a8742e32121061e17d}{}\label{group__metasim__stat_ga29ff08fe3b1245a8742e32121061e17d}
+
+\item 
+double {\bfseries Meta\+Sim\+::\+Stat\+Percent\+::\+\_\+den}\hypertarget{group__metasim__stat_ga13ac7544eefa57cd8d204a1304240875}{}\label{group__metasim__stat_ga13ac7544eefa57cd8d204a1304240875}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the basic classes for implementing statistical processing.
+
+The class tree is the following\+: 
+\begin{DoxyPre}
+\# lev 0             \hyperlink{classMetaSim_1_1BaseStat}{BaseStat}                      
+\#                /     |       \textbackslash{}                  
+\#               /      |        \textbackslash{}                 
+\#              /       |         \textbackslash{}                
+\# lev 1     \hyperlink{classMetaSim_1_1StatMax}{StatMax}   \hyperlink{classMetaSim_1_1StatMin}{StatMin}   \hyperlink{classMetaSim_1_1StatMean}{StatMean} ...       
+\#           /   \textbackslash{}                                  
+\#          /     \textbackslash{}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\# lev 2 StatTask1 StatTask2  ...     ...           
+\#
+\end{DoxyPre}
+ Level 0 (\hyperlink{classMetaSim_1_1BaseStat}{Base\+Stat}) cannot be changed\+: it implements the functions for doing statistic\+: it is initialized with the number of experiments to be done, and has an array where the data are recorded at the end of the simulation. It has two pure virtual function, probe() and record(), so no object of this class can be instanciated. It has some function to get the final stats (like get\+Mean and get\+Conf\+Interval).
+
+Level 1 (\hyperlink{classMetaSim_1_1StatMax}{Stat\+Max} ...) implements the function for collecting statistic; for example, the \hyperlink{classMetaSim_1_1StatMax}{Stat\+Max} class record the maximum value during an experiment. The user can add his own classes to this level, and he must implement the record() function and the init\+Value() function.
+
+Level 2 implements the probe() for a single event. The user must write entirely this level, depending on the variable he needs to measure. When implementing a class of this level, the user must write the probe function, which has to call the record() function with the appropriate value. For example, if we want to measure the maximum release time of task1 the we need to write\+: 
+\begin{DoxyPre}
+\subsection*{class StatFT\_Task1 : public \hyperlink{classMetaSim_1_1StatMax}{StatMax} \{}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\subsection*{...}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\subsection*{virtual void probe() \{}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\subsection*{record(task1.release);}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\subsection*{\};}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\subsection*{...}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\subsection*{\};}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}
+\end{DoxyPre}
+ 
+
+\subsection{Function Documentation}
+\index{Statistical classes@{Statistical classes}!attach@{attach}}
+\index{attach@{attach}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{attach(\+Entity $\ast$e)}{attach(Entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Base\+Stat\+::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__stat_gaf5584d4aefc280eb644997fd13f8cd3d}{}\label{group__metasim__stat_gaf5584d4aefc280eb644997fd13f8cd3d}
+This function links the statistical probe to the correct events associated with a given entity.
+
+D\+E\+P\+R\+E\+C\+A\+T\+ED.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]remove this function. Not very OO, because it forces to use dynamic casts. By now it is deprecated. Substituted by add\+Particle() (see \hyperlink{particle_8hpp_source}{particle.\+hpp}). \end{DoxyRefDesc}
+
+
+Reimplemented in \hyperlink{classAvgTimeStateStat_aa059edd518635462a51284e1fa804d1c}{Avg\+Time\+State\+Stat}, and \hyperlink{classCollisionStat_abc29d133c4a85f966eaf3ce5e2e6fe5f}{Collision\+Stat}.
+
+\index{Statistical classes@{Statistical classes}!collect@{collect}}
+\index{collect@{collect}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{collect()}{collect()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Base\+Stat\+::collect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{group__metasim__stat_gac2088baeeca5cfd9d8b6393831118e98}{}\label{group__metasim__stat_gac2088baeeca5cfd9d8b6393831118e98}
+called at the end of the run, puts the current value in the array of experiments. \index{Statistical classes@{Statistical classes}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Base\+Stat\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{group__metasim__stat_gadf8350d5f8be46ce1ef72e24e4b68fdf}{}\label{group__metasim__stat_gadf8350d5f8be46ce1ef72e24e4b68fdf}
+automatically called at the end of the run, collects all stats. \index{Statistical classes@{Statistical classes}!end\+Sim@{end\+Sim}}
+\index{end\+Sim@{end\+Sim}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{end\+Sim()}{endSim()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Base\+Stat\+::end\+Sim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{group__metasim__stat_ga76adedc2cd26b03eae9274c628472c3b}{}\label{group__metasim__stat_ga76adedc2cd26b03eae9274c628472c3b}
+automatically called at the end of the sim, write the files. \index{Statistical classes@{Statistical classes}!get\+Conf\+Interval@{get\+Conf\+Interval}}
+\index{get\+Conf\+Interval@{get\+Conf\+Interval}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{get\+Conf\+Interval(\+C\+O\+N\+F\+I\+D\+E\+N\+C\+E\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L c=\+C95)}{getConfInterval(CONFIDENCE_INTERVAL c=C95)}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Base\+Stat\+::get\+Conf\+Interval (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+O\+N\+F\+I\+D\+E\+N\+C\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL}}]{c = {\ttfamily C95}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__metasim__stat_ga27e74d139c9f265aa0d6427ed2d546f8}{}\label{group__metasim__stat_ga27e74d139c9f265aa0d6427ed2d546f8}
+Returns the 90\% or 95\% confidence interval because of the underlying implementation of the \hyperlink{group__metasim__stat_ga72c3e88d10989f82926d1e4622a741a2}{t\+\_\+student()} function, which has been pre-\/calculated only for 90\% and 95\% values
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & can be C90 or C95 \\
+\hline
+\end{DoxyParams}
+\index{Statistical classes@{Statistical classes}!get\+Last\+Value@{get\+Last\+Value}}
+\index{get\+Last\+Value@{get\+Last\+Value}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{get\+Last\+Value()}{getLastValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Base\+Stat\+::get\+Last\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__metasim__stat_ga44f5a2cda5f88cf941c1cedbc40c3e19}{}\label{group__metasim__stat_ga44f5a2cda5f88cf941c1cedbc40c3e19}
+Returns the data collected in the last run \index{Statistical classes@{Statistical classes}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Meta\+Sim\+::\+Base\+Stat\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__metasim__stat_ga4aa54dc810a8178ce3c1bcd13e3f1f00}{}\label{group__metasim__stat_ga4aa54dc810a8178ce3c1bcd13e3f1f00}
+Returns the name of this stat. \index{Statistical classes@{Statistical classes}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{get\+Value()}{getValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Base\+Stat\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__metasim__stat_ga1c038c3cad17287ae59680a62e1301a9}{}\label{group__metasim__stat_ga1c038c3cad17287ae59680a62e1301a9}
+Returns the current value of the stat object. \index{Statistical classes@{Statistical classes}!init@{init}}
+\index{init@{init}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{init(size\+\_\+t n)}{init(size_t n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Base\+Stat\+::init (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{group__metasim__stat_gacde8a3231d53a08919f79f6e7de34f14}{}\label{group__metasim__stat_gacde8a3231d53a08919f79f6e7de34f14}
+Must be called before the first run. 
+\begin{DoxyParams}{Parameters}
+{\em n} & number of runs. \\
+\hline
+\end{DoxyParams}
+\index{Statistical classes@{Statistical classes}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Base\+Stat\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{group__metasim__stat_gaba33ca71604bba99e4204f0315079544}{}\label{group__metasim__stat_gaba33ca71604bba99e4204f0315079544}
+automatically called at the beginning of the run, prepare the int values \index{Statistical classes@{Statistical classes}!probe@{probe}}
+\index{probe@{probe}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{probe(\+Event $\ast$e)}{probe(Event *e)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Base\+Stat\+::probe (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{}\label{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}
+level 2 function\+: called by the event action() method.
+
+D\+E\+P\+R\+E\+C\+A\+T\+ED.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]remove this function. Not very OO, because it takes a generic event, and most of the times we must do a dynamic\+\_\+cast$<$$>$. By now it is deprecated. Must be substituted by non-\/virtual probe methods that take the typed event object as parameters (see \hyperlink{particle_8hpp_source}{particle.\+hpp}). \end{DoxyRefDesc}
+
+
+Reimplemented in \hyperlink{classAvgTimeStateStat_a8ea42334aca934dcfe2cfe6c4c033aad}{Avg\+Time\+State\+Stat}, and \hyperlink{classCollisionStat_abf20ddc5f67ae680a8efc670ddd9f870}{Collision\+Stat}.
+
+\index{Statistical classes@{Statistical classes}!record@{record}}
+\index{record@{record}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{record(double)=0}{record(double)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Base\+Stat\+::record (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{}\label{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}
+Level 1 function\+: it is called by the \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{probe()} (level 2) 
+
+Implemented in \hyperlink{group__metasim__stat_ga6fe4e2066cb72c9eb74c44d5e700cc86}{Meta\+Sim\+::\+Stat\+Percent}, \hyperlink{group__metasim__stat_gaaafe9f379041d46cbe705d26aafc5c67}{Meta\+Sim\+::\+Stat\+Count}, \hyperlink{group__metasim__stat_ga7acbee135dc23bc73135594b3bb03476}{Meta\+Sim\+::\+Stat\+Mean}, \hyperlink{group__metasim__stat_ga420e16228992c9fb54a7a3264e4f87f5}{Meta\+Sim\+::\+Stat\+Min}, and \hyperlink{group__metasim__stat_ga6dfddcc795d8681dd33bef7eb4debd8b}{Meta\+Sim\+::\+Stat\+Max}.
+
+\index{Statistical classes@{Statistical classes}!record@{record}}
+\index{record@{record}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{record(double a)}{record(double a)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Stat\+Max\+::record (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__stat_ga6dfddcc795d8681dd33bef7eb4debd8b}{}\label{group__metasim__stat_ga6dfddcc795d8681dd33bef7eb4debd8b}
+Level 1 function\+: it is called by the \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{probe()} (level 2) 
+
+Implements \hyperlink{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{Meta\+Sim\+::\+Base\+Stat}.
+
+\index{Statistical classes@{Statistical classes}!record@{record}}
+\index{record@{record}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{record(double a)}{record(double a)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Stat\+Min\+::record (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__stat_ga420e16228992c9fb54a7a3264e4f87f5}{}\label{group__metasim__stat_ga420e16228992c9fb54a7a3264e4f87f5}
+Level 1 function\+: it is called by the \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{probe()} (level 2) 
+
+Implements \hyperlink{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{Meta\+Sim\+::\+Base\+Stat}.
+
+\index{Statistical classes@{Statistical classes}!record@{record}}
+\index{record@{record}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{record(double a)}{record(double a)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Stat\+Mean\+::record (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__stat_ga7acbee135dc23bc73135594b3bb03476}{}\label{group__metasim__stat_ga7acbee135dc23bc73135594b3bb03476}
+Level 1 function\+: it is called by the \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{probe()} (level 2) 
+
+Implements \hyperlink{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{Meta\+Sim\+::\+Base\+Stat}.
+
+\index{Statistical classes@{Statistical classes}!record@{record}}
+\index{record@{record}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{record(double increment)}{record(double increment)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Stat\+Count\+::record (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__stat_gaaafe9f379041d46cbe705d26aafc5c67}{}\label{group__metasim__stat_gaaafe9f379041d46cbe705d26aafc5c67}
+Level 1 function\+: it is called by the \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{probe()} (level 2) 
+
+Implements \hyperlink{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{Meta\+Sim\+::\+Base\+Stat}.
+
+\index{Statistical classes@{Statistical classes}!record@{record}}
+\index{record@{record}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{record(double value)}{record(double value)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Stat\+Percent\+::record (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__stat_ga6fe4e2066cb72c9eb74c44d5e700cc86}{}\label{group__metasim__stat_ga6fe4e2066cb72c9eb74c44d5e700cc86}
+Level 1 function\+: it is called by the \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{probe()} (level 2) 
+
+Implements \hyperlink{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{Meta\+Sim\+::\+Base\+Stat}.
+
+\index{Statistical classes@{Statistical classes}!set\+Transitory@{set\+Transitory}}
+\index{set\+Transitory@{set\+Transitory}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{set\+Transitory(\+Tick t)}{setTransitory(Tick t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Base\+Stat\+::set\+Transitory (
+\begin{DoxyParamCaption}
+\item[{{\bf Tick}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{group__metasim__stat_ga781ebbe2f6730a933ca4b950a40aa612}{}\label{group__metasim__stat_ga781ebbe2f6730a933ca4b950a40aa612}
+specify how long the transitory will be data collected during transitory is discarded 
+
+\subsection{Variable Documentation}
+\index{Statistical classes@{Statistical classes}!\+\_\+init\+Flag@{\+\_\+init\+Flag}}
+\index{\+\_\+init\+Flag@{\+\_\+init\+Flag}!Statistical classes@{Statistical classes}}
+\subsubsection[{\texorpdfstring{\+\_\+init\+Flag}{_initFlag}}]{\setlength{\rightskip}{0pt plus 5cm}bool Meta\+Sim\+::\+Base\+Stat\+::\+\_\+init\+Flag = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{group__metasim__stat_gac2cec74a9d6f8990cfb06fcd32327b60}{}\label{group__metasim__stat_gac2cec74a9d6f8990cfb06fcd32327b60}
+used to see if the base stat class has been initialized. (???) 

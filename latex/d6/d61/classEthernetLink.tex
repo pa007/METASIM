@@ -1,0 +1,88 @@
+\hypertarget{classEthernetLink}{}\section{Ethernet\+Link Class Reference}
+\label{classEthernetLink}\index{Ethernet\+Link@{Ethernet\+Link}}
+
+
+Inheritance diagram for Ethernet\+Link\+:
+% FIG 0
+
+
+Collaboration diagram for Ethernet\+Link\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ethernet\+Link} (const char $\ast$name)\hypertarget{classEthernetLink_aeb0d54ac19e6b3a386a2bbf1450f4766}{}\label{classEthernetLink_aeb0d54ac19e6b3a386a2bbf1450f4766}
+
+\item 
+bool {\bfseries is\+Busy} ()\hypertarget{classEthernetLink_ad7306fbf61ae7f2cdc28e37896b52646}{}\label{classEthernetLink_ad7306fbf61ae7f2cdc28e37896b52646}
+
+\item 
+virtual void {\bfseries send} (\hyperlink{classMessage}{Message} $\ast$m)\hypertarget{classEthernetLink_a7a22b3a74f4b001231ba67dd14839497}{}\label{classEthernetLink_a7a22b3a74f4b001231ba67dd14839497}
+
+\item 
+void {\bfseries contend} (\hyperlink{classEthernetInterface}{Ethernet\+Interface} $\ast$eth, \hyperlink{classMessage}{Message} $\ast$m)\hypertarget{classEthernetLink_a74845f4048e52185717dda4ad9904297}{}\label{classEthernetLink_a74845f4048e52185717dda4ad9904297}
+
+\item 
+void {\bfseries on\+End\+Contention} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$e)\hypertarget{classEthernetLink_a0185b6dd89b608334116d099f83521d0}{}\label{classEthernetLink_a0185b6dd89b608334116d099f83521d0}
+
+\item 
+void {\bfseries on\+Collision} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$e)\hypertarget{classEthernetLink_af7ebefc83d137691f68212efdd790135}{}\label{classEthernetLink_af7ebefc83d137691f68212efdd790135}
+
+\item 
+void {\bfseries on\+End\+Transmission} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$e)\hypertarget{classEthernetLink_a2b2902c6e395ec2fcb97629e804a01ac}{}\label{classEthernetLink_a2b2902c6e395ec2fcb97629e804a01ac}
+
+\item 
+void {\bfseries set\+Contention\+Period} (int p)\hypertarget{classEthernetLink_a000dd9d3dab92fd688bb00e45a604e24}{}\label{classEthernetLink_a000dd9d3dab92fd688bb00e45a604e24}
+
+\item 
+int {\bfseries get\+Contention\+Period} ()\hypertarget{classEthernetLink_ac3e13fb6d74f65e88c4605b2bd95f6b4}{}\label{classEthernetLink_ac3e13fb6d74f65e88c4605b2bd95f6b4}
+
+\item 
+void \hyperlink{classEthernetLink_ad1e1ffee1fa7dcc8aa7ac4cf564a28fc}{new\+Run} ()
+\item 
+void \hyperlink{classEthernetLink_a4dcc4c020cb42225283bc11d4f70f32c}{end\+Run} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1GEvent}{Meta\+Sim\+::\+G\+Event}$<$ \hyperlink{classEthernetLink}{Ethernet\+Link} $>$ {\bfseries \+\_\+end\+\_\+contention\+\_\+evt}\hypertarget{classEthernetLink_a715c6db67c5a5825ec413e07fbc5adc7}{}\label{classEthernetLink_a715c6db67c5a5825ec413e07fbc5adc7}
+
+\item 
+\hyperlink{classMetaSim_1_1GEvent}{Meta\+Sim\+::\+G\+Event}$<$ \hyperlink{classEthernetLink}{Ethernet\+Link} $>$ {\bfseries \+\_\+collision\+\_\+evt}\hypertarget{classEthernetLink_a45e4c25f0bc214c9d496d13bc6ddc988}{}\label{classEthernetLink_a45e4c25f0bc214c9d496d13bc6ddc988}
+
+\item 
+\hyperlink{classMetaSim_1_1GEvent}{Meta\+Sim\+::\+G\+Event}$<$ \hyperlink{classEthernetLink}{Ethernet\+Link} $>$ {\bfseries \+\_\+end\+\_\+transmission\+\_\+evt}\hypertarget{classEthernetLink_a520cbe2cf20c230182895ea6cc44ce12}{}\label{classEthernetLink_a520cbe2cf20c230182895ea6cc44ce12}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Ethernet\+Link@{Ethernet\+Link}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Ethernet\+Link@{Ethernet\+Link}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ethernet\+Link\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classEthernetLink_a4dcc4c020cb42225283bc11d4f70f32c}{}\label{classEthernetLink_a4dcc4c020cb42225283bc11d4f70f32c}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classEthernetLink_a4dcc4c020cb42225283bc11d4f70f32c}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_aaf0dfabd7805ec027aa46b9b94a87e5b}{Meta\+Sim\+::\+Entity}.
+
+\index{Ethernet\+Link@{Ethernet\+Link}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Ethernet\+Link@{Ethernet\+Link}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ethernet\+Link\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classEthernetLink_ad1e1ffee1fa7dcc8aa7ac4cf564a28fc}{}\label{classEthernetLink_ad1e1ffee1fa7dcc8aa7ac4cf564a28fc}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classEthernetLink_ad1e1ffee1fa7dcc8aa7ac4cf564a28fc}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_a8d146c2ea3472c964f84cf20880ac0c9}{Meta\+Sim\+::\+Entity}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+examples/eth/link.\+hpp\item 
+examples/eth/link.\+cpp\end{DoxyCompactItemize}

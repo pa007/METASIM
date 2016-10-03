@@ -1,0 +1,132 @@
+\hypertarget{classMetaSim_1_1BaseStat}{}\section{Meta\+Sim\+:\+:Base\+Stat Class Reference}
+\label{classMetaSim_1_1BaseStat}\index{Meta\+Sim\+::\+Base\+Stat@{Meta\+Sim\+::\+Base\+Stat}}
+
+
+The basic statistical class.  
+
+
+
+
+{\ttfamily \#include $<$basestat.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Base\+Stat\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:Base\+Stat\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMetaSim_1_1BaseStat_1_1Exc}{Exc}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__metasim__stat_ga4d14ae31bff47d98dc795b118c8b2ccd}{C\+O\+N\+F\+I\+D\+E\+N\+C\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL} \{ {\bfseries C90} = 90, 
+{\bfseries C95} = 95
+ \}\hypertarget{group__metasim__stat_ga4d14ae31bff47d98dc795b118c8b2ccd}{}\label{group__metasim__stat_ga4d14ae31bff47d98dc795b118c8b2ccd}
+\begin{DoxyCompactList}\small\item\em possible values for the confidence intervals \end{DoxyCompactList}
+\item 
+typedef std\+::list$<$ \hyperlink{classMetaSim_1_1BaseStat}{Base\+Stat} $\ast$ $>$ {\bfseries List}
+\item 
+typedef List\+::const\+\_\+iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__metasim__stat_ga53f0b2d86cefc177d2c6c8960fb96ad9}{Base\+Stat} (std\+::string n=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructors\+: enqueues the object in the global stat list. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__metasim__stat_gabf9c73112c72defa99961982da53fb71}{record} (double)=0
+\item 
+virtual void {\bfseries init\+Value} ()=0
+\item 
+virtual void \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{probe} (\hyperlink{classMetaSim_1_1Event}{Event} $\ast$e)
+\item 
+virtual void \hyperlink{group__metasim__stat_gaf5584d4aefc280eb644997fd13f8cd3d}{attach} (\hyperlink{classMetaSim_1_1Entity}{Entity} $\ast$e)
+\item 
+std\+::string \hyperlink{group__metasim__stat_ga4aa54dc810a8178ce3c1bcd13e3f1f00}{get\+Name} ()
+\item 
+double \hyperlink{group__metasim__stat_ga1c038c3cad17287ae59680a62e1301a9}{get\+Value} ()
+\item 
+double \hyperlink{group__metasim__stat_ga44f5a2cda5f88cf941c1cedbc40c3e19}{get\+Last\+Value} ()
+\item 
+double \hyperlink{group__metasim__stat_ga3300f3a76af416db83cff8d67ace7561}{get\+Mean} ()
+\begin{DoxyCompactList}\small\item\em Returns the mean value. \end{DoxyCompactList}\item 
+double \hyperlink{group__metasim__stat_gad2e53ad4a56f37c4d400f3932e9d4671}{get\+Variance} ()
+\begin{DoxyCompactList}\small\item\em Returns the variance. \end{DoxyCompactList}\item 
+double \hyperlink{group__metasim__stat_ga27e74d139c9f265aa0d6427ed2d546f8}{get\+Conf\+Interval} (\hyperlink{group__metasim__stat_ga4d14ae31bff47d98dc795b118c8b2ccd}{C\+O\+N\+F\+I\+D\+E\+N\+C\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL} c=C95)
+\item 
+size\+\_\+t {\bfseries get\+Exp\+Num} ()
+\item 
+void {\bfseries print} ()
+\item 
+void {\bfseries init} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static iterator {\bfseries begin} ()
+\item 
+static iterator {\bfseries end} ()
+\item 
+static void {\bfseries print\+All} ()
+\item 
+static void \hyperlink{group__metasim__stat_gacde8a3231d53a08919f79f6e7de34f14}{init} (size\+\_\+t n)
+\item 
+static void \hyperlink{group__metasim__stat_gadf8350d5f8be46ce1ef72e24e4b68fdf}{end\+Run} ()
+\item 
+static void \hyperlink{group__metasim__stat_gaba33ca71604bba99e4204f0315079544}{new\+Run} ()
+\item 
+static void \hyperlink{group__metasim__stat_ga76adedc2cd26b03eae9274c628472c3b}{end\+Sim} ()
+\item 
+static void \hyperlink{group__metasim__stat_ga781ebbe2f6730a933ca4b950a40aa612}{set\+Transitory} (\hyperlink{classMetaSim_1_1Tick}{Tick} t)
+\item 
+static bool \hyperlink{group__metasim__stat_ga056cb5982708aff3ee784116e01b4e46}{chk\+Transitory} ()
+\begin{DoxyCompactList}\small\item\em check if we are currently inside the transitory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ double $>$ \hyperlink{group__metasim__stat_ga2bae1d8abdacdd19f279cba4b73f4b7e}{Experiments}
+\begin{DoxyCompactList}\small\item\em array of values, one for each run. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__metasim__stat_gac2088baeeca5cfd9d8b6393831118e98}{collect} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{group__metasim__stat_ga2001c33bd7f3a451b279cc0e7be1bcab}{get\+\_\+t\+\_\+perc} (double alpha)
+\begin{DoxyCompactList}\small\item\em t-\/student function \end{DoxyCompactList}\item 
+static void \hyperlink{group__metasim__stat_ga4b367dd65c3cbaba03adfc6b2105a4d1}{calc\+\_\+t} (int n)
+\begin{DoxyCompactList}\small\item\em computes the t-\/student with parameter n. \end{DoxyCompactList}\item 
+static double \hyperlink{group__metasim__stat_ga72c3e88d10989f82926d1e4622a741a2}{t\+\_\+student} (int alfa, int dol)
+\begin{DoxyCompactList}\small\item\em returns the t-\/student with parameter alfa and dol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{group__metasim__stat_gadc11fad00a3ef6ab589510c4ed514625}{\+\_\+name}
+\begin{DoxyCompactList}\small\item\em name of the stat object \end{DoxyCompactList}\item 
+double \hyperlink{group__metasim__stat_ga64ad3d61015bd5b232df8ae12a5e9b8f}{\+\_\+val}
+\begin{DoxyCompactList}\small\item\em current computed value (during the run). \end{DoxyCompactList}\item 
+\hyperlink{group__metasim__stat_ga2bae1d8abdacdd19f279cba4b73f4b7e}{Experiments} {\bfseries \+\_\+exper}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMetaSim_1_1Tick}{Tick} \hyperlink{group__metasim__stat_gabe2f955eab4756e73d411e41df17cf68}{\+\_\+transitory} = 0
+\begin{DoxyCompactList}\small\item\em lenght of the transitory. \end{DoxyCompactList}\item 
+static bool \hyperlink{group__metasim__stat_gac2cec74a9d6f8990cfb06fcd32327b60}{\+\_\+init\+Flag} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The basic statistical class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/basestat.\+hpp\item 
+src/basestat.\+cpp\end{DoxyCompactItemize}

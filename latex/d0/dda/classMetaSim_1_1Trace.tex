@@ -1,0 +1,95 @@
+\hypertarget{classMetaSim_1_1Trace}{}\section{Meta\+Sim\+:\+:Trace Class Reference}
+\label{classMetaSim_1_1Trace}\index{Meta\+Sim\+::\+Trace@{Meta\+Sim\+::\+Trace}}
+
+
+{\ttfamily \#include $<$trace.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Trace\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMetaSim_1_1Trace_1_1Exc}{Exc}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Type} \{ {\bfseries B\+I\+N\+A\+RY} = 0, 
+{\bfseries A\+S\+C\+II} = 1
+ \}\hypertarget{classMetaSim_1_1Trace_a495343b0f3f8812cf88183c1b4e4ec4d}{}\label{classMetaSim_1_1Trace_a495343b0f3f8812cf88183c1b4e4ec4d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1Trace_a479f2ba3dafd5c6f9a8091c378970889}{Trace} (const char $\ast$filename, Type type=B\+I\+N\+A\+RY, bool tof=true)
+\item 
+{\bfseries Trace} (std\+::string filename, Type type=B\+I\+N\+A\+RY, bool tof=true)\hypertarget{classMetaSim_1_1Trace_a90c6cc23632469d3034ae6d6d4a47cc5}{}\label{classMetaSim_1_1Trace_a90c6cc23632469d3034ae6d6d4a47cc5}
+
+\item 
+virtual void \hyperlink{classMetaSim_1_1Trace_a4284196f04d6639f4bb9bb2fc7662ea6}{record} (\hyperlink{classMetaSim_1_1Event}{Event} $\ast$)
+\item 
+virtual void \hyperlink{classMetaSim_1_1Trace_a9f2815326488c04359602ec51e42c20b}{open} (bool type=B\+I\+N\+A\+RY)\hypertarget{classMetaSim_1_1Trace_a9f2815326488c04359602ec51e42c20b}{}\label{classMetaSim_1_1Trace_a9f2815326488c04359602ec51e42c20b}
+
+\begin{DoxyCompactList}\small\item\em Open the file! \end{DoxyCompactList}\item 
+virtual void \hyperlink{classMetaSim_1_1Trace_a85fa7e84b02da842999db6d6f4094a81}{close} ()\hypertarget{classMetaSim_1_1Trace_a85fa7e84b02da842999db6d6f4094a81}{}\label{classMetaSim_1_1Trace_a85fa7e84b02da842999db6d6f4094a81}
+
+\begin{DoxyCompactList}\small\item\em Closes the file! \end{DoxyCompactList}\item 
+virtual \hyperlink{classMetaSim_1_1Trace_a8f6b6536c30629a7fef60a0877f5a44c}{$\sim$\+Trace} ()\hypertarget{classMetaSim_1_1Trace_a8f6b6536c30629a7fef60a0877f5a44c}{}\label{classMetaSim_1_1Trace_a8f6b6536c30629a7fef60a0877f5a44c}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries \+\_\+filename}\hypertarget{classMetaSim_1_1Trace_ad75e19e76018bb7f7c225388dae2b680}{}\label{classMetaSim_1_1Trace_ad75e19e76018bb7f7c225388dae2b680}
+
+\item 
+std\+::ofstream {\bfseries \+\_\+os}\hypertarget{classMetaSim_1_1Trace_a64874605eea725cd59c66a97baeed4aa}{}\label{classMetaSim_1_1Trace_a64874605eea725cd59c66a97baeed4aa}
+
+\item 
+bool {\bfseries to\+File}\hypertarget{classMetaSim_1_1Trace_a5825e6d359a47605017d9366034073f0}{}\label{classMetaSim_1_1Trace_a5825e6d359a47605017d9366034073f0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is just the basic interface for the tracing classes. By default, it opens a binary stream. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Meta\+Sim\+::\+Trace@{Meta\+Sim\+::\+Trace}!Trace@{Trace}}
+\index{Trace@{Trace}!Meta\+Sim\+::\+Trace@{Meta\+Sim\+::\+Trace}}
+\subsubsection[{\texorpdfstring{Trace(const char $\ast$filename, Type type=\+B\+I\+N\+A\+R\+Y, bool tof=true)}{Trace(const char *filename, Type type=BINARY, bool tof=true)}}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Sim\+::\+Trace\+::\+Trace (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{Type}]{type = {\ttfamily BINARY}, }
+\item[{bool}]{tof = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1Trace_a479f2ba3dafd5c6f9a8091c378970889}{}\label{classMetaSim_1_1Trace_a479f2ba3dafd5c6f9a8091c378970889}
+Constructor for the trace class. It opens a stream of name \char`\"{}filename\char`\"{} of type. Type can be binary or ascii (only for D\+OS based systems!). 
+
+\subsection{Member Function Documentation}
+\index{Meta\+Sim\+::\+Trace@{Meta\+Sim\+::\+Trace}!record@{record}}
+\index{record@{record}!Meta\+Sim\+::\+Trace@{Meta\+Sim\+::\+Trace}}
+\subsubsection[{\texorpdfstring{record(\+Event $\ast$)}{record(Event *)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Meta\+Sim\+::\+Trace\+::record (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMetaSim_1_1Trace_a4284196f04d6639f4bb9bb2fc7662ea6}{}\label{classMetaSim_1_1Trace_a4284196f04d6639f4bb9bb2fc7662ea6}
+This is a virtual function that must be overridden in the derived class.
+
+D\+E\+P\+R\+E\+C\+A\+T\+E\+D!
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]remove this function and substitute the current tracing with the particle mechanism \end{DoxyRefDesc}
+
+
+Reimplemented in \hyperlink{classMetaSim_1_1TraceAscii_a834f6555418ee5ad9cecf5f896aafb0b}{Meta\+Sim\+::\+Trace\+Ascii}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/trace.\+hpp\item 
+src/trace.\+cpp\end{DoxyCompactItemize}

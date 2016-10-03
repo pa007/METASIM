@@ -1,0 +1,101 @@
+\hypertarget{classQueue}{}\section{Queue Class Reference}
+\label{classQueue}\index{Queue@{Queue}}
+
+
+{\ttfamily \#include $<$queue.\+hpp$>$}
+
+
+
+Inheritance diagram for Queue\+:
+% FIG 0
+
+
+Collaboration diagram for Queue\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classQueue_1_1ServiceEvent}{Service\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQueue_af54e6980b551beb25f143a6af173c4e6}{Queue} (\hyperlink{classNode}{Node} $\ast$d, \hyperlink{classMetaSim_1_1RandomVar}{Random\+Var} $\ast$st, const char $\ast$n)
+\item 
+virtual void {\bfseries put} ()\hypertarget{classQueue_a1af2272f9ece82bf8070b6c63f115923}{}\label{classQueue_a1af2272f9ece82bf8070b6c63f115923}
+
+\item 
+void {\bfseries serve} ()\hypertarget{classQueue_acb86f5bd0f0d33af376e3556e599720c}{}\label{classQueue_acb86f5bd0f0d33af376e3556e599720c}
+
+\item 
+int {\bfseries get\+Size} ()\hypertarget{classQueue_a226bb0fb50c83b9c66187a621d620895}{}\label{classQueue_a226bb0fb50c83b9c66187a621d620895}
+
+\item 
+virtual void \hyperlink{classQueue_a130518a0de553ebf8c9f06b838a818ae}{new\+Run} ()
+\item 
+virtual void \hyperlink{classQueue_ad197c6eafd8e04ae2c55aae7efde138b}{end\+Run} ()
+\item 
+virtual void {\bfseries print} ()\hypertarget{classQueue_af3d97ee62b1f354f9f350efe4a36915b}{}\label{classQueue_af3d97ee62b1f354f9f350efe4a36915b}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQueue_1_1ServiceEvent}{Service\+Event} \hyperlink{classQueue_a5dff64dae846f1aaf4f9ce1b42da1132}{\+\_\+serv\+Event}\hypertarget{classQueue_a5dff64dae846f1aaf4f9ce1b42da1132}{}\label{classQueue_a5dff64dae846f1aaf4f9ce1b42da1132}
+
+\begin{DoxyCompactList}\small\item\em The event of served packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class implements a generic queue with one server, with randomly distributed service times. The service time is independent form the packet!! After servicing a packet, the queue node will send the packet to the destination node, that can be another queue or a sink. In this way we can specify simple networks of queues. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Queue@{Queue}!Queue@{Queue}}
+\index{Queue@{Queue}!Queue@{Queue}}
+\subsubsection[{\texorpdfstring{Queue(\+Node $\ast$d, Random\+Var $\ast$st, const char $\ast$n)}{Queue(Node *d, RandomVar *st, const char *n)}}]{\setlength{\rightskip}{0pt plus 5cm}Queue\+::\+Queue (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{d, }
+\item[{{\bf Random\+Var} $\ast$}]{st, }
+\item[{const char $\ast$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classQueue_af54e6980b551beb25f143a6af173c4e6}{}\label{classQueue_af54e6980b551beb25f143a6af173c4e6}
+Constructor for a queue. 
+\begin{DoxyParams}{Parameters}
+{\em d} & pointer to the destination node \\
+\hline
+{\em st} & service time random variable \\
+\hline
+{\em n} & a simbolyc name for the queue. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Queue@{Queue}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Queue@{Queue}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Queue\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classQueue_ad197c6eafd8e04ae2c55aae7efde138b}{}\label{classQueue_ad197c6eafd8e04ae2c55aae7efde138b}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classQueue_ad197c6eafd8e04ae2c55aae7efde138b}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Reimplemented from \hyperlink{classNode_a9bee9183d5723f5565d97db1005c4ef6}{Node}.
+
+\index{Queue@{Queue}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Queue@{Queue}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Queue\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classQueue_a130518a0de553ebf8c9f06b838a818ae}{}\label{classQueue_a130518a0de553ebf8c9f06b838a818ae}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classQueue_a130518a0de553ebf8c9f06b838a818ae}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Reimplemented from \hyperlink{classNode_a7154231b573b4f86f200b890b580cc14}{Node}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/queue/queue.\+hpp\end{DoxyCompactItemize}

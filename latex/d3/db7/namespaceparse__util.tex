@@ -1,0 +1,104 @@
+\hypertarget{namespaceparse__util}{}\section{parse\+\_\+util Namespace Reference}
+\label{namespaceparse__util}\index{parse\+\_\+util@{parse\+\_\+util}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classparse__util_1_1ParseExc}{Parse\+Exc}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceparse__util_adda823e5ea0e371029fd8d7d9aaaf4d9}{remove\+\_\+spaces} (const string \&tk)
+\item 
+vector$<$ string $>$ \hyperlink{namespaceparse__util_abed338a93fcf282d1ac304cd901aba6f}{split} (const string \&code, const string \&sep)
+\item 
+vector$<$ string $>$ \hyperlink{namespaceparse__util_a14526fd1fe35767507f2c20ac147ade3}{split\+\_\+instr} (const string \&code)
+\item 
+string \hyperlink{namespaceparse__util_a6ad8105b273c8cf887c3f3af52a18913}{get\+\_\+token} (const string \&instr, const string \&open\+\_\+par)
+\item 
+string \hyperlink{namespaceparse__util_ad1d53324b50452d7a1e53fa9b9f37834}{get\+\_\+param} (const string \&instr, const string \&open\+\_\+par, const string \&close\+\_\+par)
+\item 
+vector$<$ string $>$ \hyperlink{namespaceparse__util_a5f92a28671f0d399f0dc639c5b72e709}{split\+\_\+param} (const string \&p, const string \&sep, char open\+\_\+par, char close\+\_\+par)
+\item 
+void \hyperlink{namespaceparse__util_a498f01b8de3af4281754eb7bb9246fba}{parse\+\_\+double} (const string \&nums, double \&res, string \&unit)
+\item 
+string \hyperlink{namespaceparse__util_a6e8465e95ed595c91ae8f699bef4cbc1}{get\+\_\+param2} (const string \&instr, const string \&open\+\_\+par=\char`\"{}=\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This namespace contains useful functions for parsing strings. Such functions are used mainly by the abstract factory that creates random variables. 
+
+\subsection{Function Documentation}
+\index{parse\+\_\+util@{parse\+\_\+util}!get\+\_\+param@{get\+\_\+param}}
+\index{get\+\_\+param@{get\+\_\+param}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{get\+\_\+param(const string \&instr, const string \&open\+\_\+par, const string \&close\+\_\+par)}{get_param(const string &instr, const string &open_par, const string &close_par)}}]{\setlength{\rightskip}{0pt plus 5cm}string parse\+\_\+util\+::get\+\_\+param (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{instr, }
+\item[{const string \&}]{open\+\_\+par = {\ttfamily \char`\"{}(\char`\"{}}, }
+\item[{const string \&}]{close\+\_\+par = {\ttfamily \char`\"{})\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_ad1d53324b50452d7a1e53fa9b9f37834}{}\label{namespaceparse__util_ad1d53324b50452d7a1e53fa9b9f37834}
+Given an instruction {\ttfamily instr} of the form \char`\"{}token(p1,p2)\char`\"{} returns the parameters \char`\"{}p1,p2\char`\"{}. \index{parse\+\_\+util@{parse\+\_\+util}!get\+\_\+param2@{get\+\_\+param2}}
+\index{get\+\_\+param2@{get\+\_\+param2}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{get\+\_\+param2(const string \&instr, const string \&open\+\_\+par=""="")}{get_param2(const string &instr, const string &open_par="=")}}]{\setlength{\rightskip}{0pt plus 5cm}string parse\+\_\+util\+::get\+\_\+param2 (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{instr, }
+\item[{const string \&}]{open\+\_\+par = {\ttfamily \char`\"{}=\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_a6e8465e95ed595c91ae8f699bef4cbc1}{}\label{namespaceparse__util_a6e8465e95ed595c91ae8f699bef4cbc1}
+Given an instruction {\ttfamily instr} of the form \char`\"{}token = param1,
+param2\char`\"{} returns the parameters \char`\"{}param1, param2\char`\"{} (i.\+e. it returns everything after the separation symbol) \index{parse\+\_\+util@{parse\+\_\+util}!get\+\_\+token@{get\+\_\+token}}
+\index{get\+\_\+token@{get\+\_\+token}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{get\+\_\+token(const string \&instr, const string \&open\+\_\+par)}{get_token(const string &instr, const string &open_par)}}]{\setlength{\rightskip}{0pt plus 5cm}string parse\+\_\+util\+::get\+\_\+token (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{instr, }
+\item[{const string \&}]{open\+\_\+par = {\ttfamily \char`\"{}(\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_a6ad8105b273c8cf887c3f3af52a18913}{}\label{namespaceparse__util_a6ad8105b273c8cf887c3f3af52a18913}
+Given an instruction {\ttfamily instr} of the form \char`\"{}token(p1)\char`\"{} returns the token. \index{parse\+\_\+util@{parse\+\_\+util}!parse\+\_\+double@{parse\+\_\+double}}
+\index{parse\+\_\+double@{parse\+\_\+double}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{parse\+\_\+double(const string \&nums, double \&res, string \&unit)}{parse_double(const string &nums, double &res, string &unit)}}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+\_\+util\+::parse\+\_\+double (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{nums, }
+\item[{double \&}]{res, }
+\item[{string \&}]{unit}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_a498f01b8de3af4281754eb7bb9246fba}{}\label{namespaceparse__util_a498f01b8de3af4281754eb7bb9246fba}
+Given a string of the form \char`\"{}123.\+75ms\char`\"{} returns the double number at the beginning of the string in res and the unit of measure in unit. \index{parse\+\_\+util@{parse\+\_\+util}!remove\+\_\+spaces@{remove\+\_\+spaces}}
+\index{remove\+\_\+spaces@{remove\+\_\+spaces}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{remove\+\_\+spaces(const string \&tk)}{remove_spaces(const string &tk)}}]{\setlength{\rightskip}{0pt plus 5cm}string parse\+\_\+util\+::remove\+\_\+spaces (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{tk}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_adda823e5ea0e371029fd8d7d9aaaf4d9}{}\label{namespaceparse__util_adda823e5ea0e371029fd8d7d9aaaf4d9}
+Removes trailing spaces from the beginning and from the end of the string {\ttfamily tk}. \index{parse\+\_\+util@{parse\+\_\+util}!split@{split}}
+\index{split@{split}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{split(const string \&code, const string \&sep)}{split(const string &code, const string &sep)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ parse\+\_\+util\+::split (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{code, }
+\item[{const string \&}]{sep}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_abed338a93fcf282d1ac304cd901aba6f}{}\label{namespaceparse__util_abed338a93fcf282d1ac304cd901aba6f}
+Given a string {\ttfamily code}, consisting of many substrings separated by the sequence {\ttfamily sep}, returns a vector containing the substrings. For example, given the string \char`\"{}fixed(1);wait(\+R);\char`\"{} returns the vector containing strings \char`\"{}fixed(1)\char`\"{} and \char`\"{}wait(\+R)\char`\"{}. \index{parse\+\_\+util@{parse\+\_\+util}!split\+\_\+instr@{split\+\_\+instr}}
+\index{split\+\_\+instr@{split\+\_\+instr}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{split\+\_\+instr(const string \&code)}{split_instr(const string &code)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ parse\+\_\+util\+::split\+\_\+instr (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{code}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_a14526fd1fe35767507f2c20ac147ade3}{}\label{namespaceparse__util_a14526fd1fe35767507f2c20ac147ade3}
+Given a sequence of \char`\"{}instructions\char`\"{} spearated by \textquotesingle{};\textquotesingle{}, returns a vector containing the istructions. Notice that the last instructions must finish with a \textquotesingle{};\textquotesingle{}, otherwise it is ignored.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]add sintax error checking! \end{DoxyRefDesc}
+\index{parse\+\_\+util@{parse\+\_\+util}!split\+\_\+param@{split\+\_\+param}}
+\index{split\+\_\+param@{split\+\_\+param}!parse\+\_\+util@{parse\+\_\+util}}
+\subsubsection[{\texorpdfstring{split\+\_\+param(const string \&p, const string \&sep, char open\+\_\+par, char close\+\_\+par)}{split_param(const string &p, const string &sep, char open_par, char close_par)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ parse\+\_\+util\+::split\+\_\+param (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{p, }
+\item[{const string \&}]{sep = {\ttfamily \char`\"{},\char`\"{}}, }
+\item[{char}]{open\+\_\+par = {\ttfamily \textquotesingle{}(\textquotesingle{}}, }
+\item[{char}]{close\+\_\+par = {\ttfamily \textquotesingle{})\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceparse__util_a5f92a28671f0d399f0dc639c5b72e709}{}\label{namespaceparse__util_a5f92a28671f0d399f0dc639c5b72e709}
+Given a string containing the parameters \char`\"{}(p1,p2)\char`\"{}, returns a vector of strings containing the parameters p1 and p2. 

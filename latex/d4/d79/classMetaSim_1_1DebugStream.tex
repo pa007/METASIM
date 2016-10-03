@@ -1,0 +1,126 @@
+\hypertarget{classMetaSim_1_1DebugStream}{}\section{Meta\+Sim\+:\+:Debug\+Stream Class Reference}
+\label{classMetaSim_1_1DebugStream}\index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+
+
+{\ttfamily \#include $<$debugstream.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_a51b307e2b925b2a35641832ec7b9ed62}{set\+Stream} (std\+::ostream \&o)
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_a62046f1149ff12c4bc2c4c87bd4a404a}{set\+Stream} (const char $\ast$filename)
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_ac3d6c201bded911a76585642fad712e3}{enable} (std\+::string s)
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_a82f93fe70267eac9241f21489caccf35}{disable} (std\+::string s)
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_a6a00796bbceceda0284ede0b356d0596}{enter} (std\+::string s)
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_ab0fe57a08a1a2f03ecd262a0d71265cb}{enter} (std\+::string s, std\+::string header)
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_ac846773a72115317c5794fb2d5e0525b}{exit} ()
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_a6c8b2940e6c01770c31ce502a1bd15b8}{set\+Transitory} (\hyperlink{classMetaSim_1_1Tick}{Tick} t)
+\item 
+void \hyperlink{classMetaSim_1_1DebugStream_a415b665fb3c6181f911651696d8f8522}{set\+Transitory} (\hyperlink{classMetaSim_1_1Tick}{Tick} t1, \hyperlink{classMetaSim_1_1Tick}{Tick} t2)
+\item 
+bool {\bfseries filter} () const \hypertarget{classMetaSim_1_1DebugStream_adc9225225f48dff6368b83adfab176ad}{}\label{classMetaSim_1_1DebugStream_adc9225225f48dff6368b83adfab176ad}
+
+\item 
+void {\bfseries reset\+Indent} ()\hypertarget{classMetaSim_1_1DebugStream_ac134617e7a0793a6d24c3e49fb8c9e1c}{}\label{classMetaSim_1_1DebugStream_ac134617e7a0793a6d24c3e49fb8c9e1c}
+
+\item 
+void {\bfseries indent} ()\hypertarget{classMetaSim_1_1DebugStream_a5b5d6ccc91d25ee1d9200e1efc18e5ce}{}\label{classMetaSim_1_1DebugStream_a5b5d6ccc91d25ee1d9200e1efc18e5ce}
+
+\item 
+std\+::ostream \& {\bfseries get\+Stream} ()\hypertarget{classMetaSim_1_1DebugStream_aeef681491579ec8faedeadd359d95811}{}\label{classMetaSim_1_1DebugStream_aeef681491579ec8faedeadd359d95811}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class used to manipulate the debug output. 
+
+\subsection{Member Function Documentation}
+\index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!disable@{disable}}
+\index{disable@{disable}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{disable(std\+::string s)}{disable(std::string s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::disable (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_a82f93fe70267eac9241f21489caccf35}{}\label{classMetaSim_1_1DebugStream_a82f93fe70267eac9241f21489caccf35}
+Disable the output for a certain debug level. 
+\begin{DoxyParams}{Parameters}
+{\em s} & String that identifies the debug level. \\
+\hline
+\end{DoxyParams}
+\index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!enable@{enable}}
+\index{enable@{enable}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{enable(std\+::string s)}{enable(std::string s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::enable (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_ac3d6c201bded911a76585642fad712e3}{}\label{classMetaSim_1_1DebugStream_ac3d6c201bded911a76585642fad712e3}
+Enable the output for a certain debug level. 
+\begin{DoxyParams}{Parameters}
+{\em s} & String that identifies the debug level. \\
+\hline
+\end{DoxyParams}
+\index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!enter@{enter}}
+\index{enter@{enter}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{enter(std\+::string s)}{enter(std::string s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::enter (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_a6a00796bbceceda0284ede0b356d0596}{}\label{classMetaSim_1_1DebugStream_a6a00796bbceceda0284ede0b356d0596}
+Enters in the specified debug level. From this point until the next call to \hyperlink{classMetaSim_1_1DebugStream_a6a00796bbceceda0284ede0b356d0596}{enter()}, every output on the debug stream is considered belonging to the current debug level. \index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!enter@{enter}}
+\index{enter@{enter}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{enter(std\+::string s, std\+::string header)}{enter(std::string s, std::string header)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::enter (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s, }
+\item[{std\+::string}]{header}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_ab0fe57a08a1a2f03ecd262a0d71265cb}{}\label{classMetaSim_1_1DebugStream_ab0fe57a08a1a2f03ecd262a0d71265cb}
+Enters in the specified debug level and output the header string. From this point until the next call to \hyperlink{classMetaSim_1_1DebugStream_a6a00796bbceceda0284ede0b356d0596}{enter()}, every output on the debug stream is considered in the the current debug level. \index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!exit@{exit}}
+\index{exit@{exit}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{exit()}{exit()}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_ac846773a72115317c5794fb2d5e0525b}{}\label{classMetaSim_1_1DebugStream_ac846773a72115317c5794fb2d5e0525b}
+Exits from the current debug level. \index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!set\+Stream@{set\+Stream}}
+\index{set\+Stream@{set\+Stream}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{set\+Stream(std\+::ostream \&o)}{setStream(std::ostream &o)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::set\+Stream (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_a51b307e2b925b2a35641832ec7b9ed62}{}\label{classMetaSim_1_1DebugStream_a51b307e2b925b2a35641832ec7b9ed62}
+Set the debug stream. \index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!set\+Stream@{set\+Stream}}
+\index{set\+Stream@{set\+Stream}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{set\+Stream(const char $\ast$filename)}{setStream(const char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::set\+Stream (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_a62046f1149ff12c4bc2c4c87bd4a404a}{}\label{classMetaSim_1_1DebugStream_a62046f1149ff12c4bc2c4c87bd4a404a}
+Open the file specified by the string filename and set it as a debug stream. \index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!set\+Transitory@{set\+Transitory}}
+\index{set\+Transitory@{set\+Transitory}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{set\+Transitory(\+Tick t)}{setTransitory(Tick t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::set\+Transitory (
+\begin{DoxyParamCaption}
+\item[{{\bf Tick}}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_a6c8b2940e6c01770c31ce502a1bd15b8}{}\label{classMetaSim_1_1DebugStream_a6c8b2940e6c01770c31ce502a1bd15b8}
+Enables output from tick t \index{Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}!set\+Transitory@{set\+Transitory}}
+\index{set\+Transitory@{set\+Transitory}!Meta\+Sim\+::\+Debug\+Stream@{Meta\+Sim\+::\+Debug\+Stream}}
+\subsubsection[{\texorpdfstring{set\+Transitory(\+Tick t1, Tick t2)}{setTransitory(Tick t1, Tick t2)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Debug\+Stream\+::set\+Transitory (
+\begin{DoxyParamCaption}
+\item[{{\bf Tick}}]{t1, }
+\item[{{\bf Tick}}]{t2}
+\end{DoxyParamCaption}
+)}\hypertarget{classMetaSim_1_1DebugStream_a415b665fb3c6181f911651696d8f8522}{}\label{classMetaSim_1_1DebugStream_a415b665fb3c6181f911651696d8f8522}
+Enables output from tick t1 to t2 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/debugstream.\+hpp\item 
+src/debugstream.\+cpp\end{DoxyCompactItemize}

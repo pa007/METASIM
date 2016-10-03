@@ -1,0 +1,71 @@
+\hypertarget{classSource}{}\section{Source Class Reference}
+\label{classSource}\index{Source@{Source}}
+
+
+Inheritance diagram for Source\+:
+% FIG 0
+
+
+Collaboration diagram for Source\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSource_1_1ProduceEvent}{Produce\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Source} (\hyperlink{classNode}{Node} $\ast$d, \hyperlink{classMetaSim_1_1RandomVar}{Random\+Var} $\ast$a, const char $\ast$n)\hypertarget{classSource_a59c2b9126064e5e4d512860e0c77b559}{}\label{classSource_a59c2b9126064e5e4d512860e0c77b559}
+
+\item 
+virtual void {\bfseries put} ()\hypertarget{classSource_ae3c687d94ab98cec0804d8b84a29ca59}{}\label{classSource_ae3c687d94ab98cec0804d8b84a29ca59}
+
+\item 
+void {\bfseries produce} ()\hypertarget{classSource_a2a64d8ae01ba44b46f90c5b2ffe7ab21}{}\label{classSource_a2a64d8ae01ba44b46f90c5b2ffe7ab21}
+
+\item 
+virtual void \hyperlink{classSource_ac93437b75678d35efaf8b92cdf0092fa}{new\+Run} ()
+\item 
+virtual void \hyperlink{classSource_a0d2c0f43c2acdaa1abe06b2d83cf3a48}{end\+Run} ()
+\item 
+virtual void {\bfseries print} ()\hypertarget{classSource_a03efc8f0b65d77edea2765296bdc7e23}{}\label{classSource_a03efc8f0b65d77edea2765296bdc7e23}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSource_1_1ProduceEvent}{Produce\+Event} {\bfseries \+\_\+prod\+Event}\hypertarget{classSource_ab037a1bd0520d23a10b0d76ec5a2b2d6}{}\label{classSource_ab037a1bd0520d23a10b0d76ec5a2b2d6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Source@{Source}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Source@{Source}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Source\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classSource_a0d2c0f43c2acdaa1abe06b2d83cf3a48}{}\label{classSource_a0d2c0f43c2acdaa1abe06b2d83cf3a48}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classSource_a0d2c0f43c2acdaa1abe06b2d83cf3a48}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Reimplemented from \hyperlink{classNode_a9bee9183d5723f5565d97db1005c4ef6}{Node}.
+
+\index{Source@{Source}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Source@{Source}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Source\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classSource_ac93437b75678d35efaf8b92cdf0092fa}{}\label{classSource_ac93437b75678d35efaf8b92cdf0092fa}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classSource_ac93437b75678d35efaf8b92cdf0092fa}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Reimplemented from \hyperlink{classNode_a7154231b573b4f86f200b890b580cc14}{Node}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/queue/queue.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{classMetaSim_1_1DetVar}{}\section{Meta\+Sim\+:\+:Det\+Var Class Reference}
+\label{classMetaSim_1_1DetVar}\index{Meta\+Sim\+::\+Det\+Var@{Meta\+Sim\+::\+Det\+Var}}
+
+
+{\ttfamily \#include $<$randomvar.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Det\+Var\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:Det\+Var\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Det\+Var} (const std\+::string \&filename)
+\item 
+{\bfseries Det\+Var} (vector$<$ double $>$ \&a)
+\item 
+{\bfseries Det\+Var} (double a\mbox{[}$\,$\mbox{]}, int s)
+\item 
+virtual double \hyperlink{group__metasim__random_ga91b5ba566ff6005e2bdfc18f8691cd85}{get} ()
+\item 
+virtual double {\bfseries get\+Maximum} ()  throw (\+Max\+Exception)
+\item 
+virtual double {\bfseries get\+Minimum} ()  throw (\+Max\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMetaSim_1_1RandomVar}{Random\+Var} $\ast$ {\bfseries create\+Instance} (vector$<$ string $>$ \&par)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class implements a deterministic variable. The object must be initialized with an array (double\mbox{[}\mbox{]}) or a vector$<$double$>$ of values, or with a file containing the sequence of values. Each call of \hyperlink{group__metasim__random_ga91b5ba566ff6005e2bdfc18f8691cd85}{get()} returns one of the numbers in the sequence. When the last number in the sequence has been read, the sequence starts over. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/randomvar.\+hpp\item 
+src/randomvar.\+cpp\end{DoxyCompactItemize}

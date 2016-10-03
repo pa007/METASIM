@@ -1,0 +1,389 @@
+\hypertarget{group__metasim__random}{}\section{Random Variables}
+\label{group__metasim__random}\index{Random Variables@{Random Variables}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMetaSim_1_1RandomGen}{Meta\+Sim\+::\+Random\+Gen}
+\item 
+class \hyperlink{classMetaSim_1_1RandomVar_1_1Exc}{Meta\+Sim\+::\+Random\+Var\+::\+Exc}
+\item 
+class \hyperlink{classMetaSim_1_1RandomVar_1_1MaxException}{Meta\+Sim\+::\+Random\+Var\+::\+Max\+Exception}
+\item 
+class \hyperlink{classMetaSim_1_1RandomVar}{Meta\+Sim\+::\+Random\+Var}
+\item 
+class \hyperlink{classMetaSim_1_1DeltaVar}{Meta\+Sim\+::\+Delta\+Var}
+\item 
+class \hyperlink{classMetaSim_1_1UniformVar}{Meta\+Sim\+::\+Uniform\+Var}
+\item 
+class \hyperlink{classMetaSim_1_1ExponentialVar}{Meta\+Sim\+::\+Exponential\+Var}
+\item 
+class \hyperlink{classMetaSim_1_1ParetoVar}{Meta\+Sim\+::\+Pareto\+Var}
+\item 
+class \hyperlink{classMetaSim_1_1NormalVar}{Meta\+Sim\+::\+Normal\+Var}
+\item 
+class \hyperlink{classMetaSim_1_1PoissonVar}{Meta\+Sim\+::\+Poisson\+Var}
+\item 
+class \hyperlink{classMetaSim_1_1DetVar}{Meta\+Sim\+::\+Det\+Var}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef string {\bfseries Meta\+Sim\+::\+Random\+Var\+::\+B\+A\+S\+E\+\_\+\+K\+E\+Y\+\_\+\+T\+Y\+PE}\hypertarget{group__metasim__random_ga52651dcdbc504543dced63c7b576cac8}{}\label{group__metasim__random_ga52651dcdbc504543dced63c7b576cac8}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__metasim__random_gabaa90db3234c032b6650a1cffb523a55}{Meta\+Sim\+::\+Random\+Gen\+::\+Random\+Gen} (Rand\+Num s)
+\item 
+void \hyperlink{group__metasim__random_ga533a4ad9a71fafe04a6b25491cd38e0b}{Meta\+Sim\+::\+Random\+Gen\+::init} (Rand\+Num s)
+\item 
+Rand\+Num \hyperlink{group__metasim__random_ga94a34514116b265e8fd0bbbd35d662d9}{Meta\+Sim\+::\+Random\+Gen\+::sample} ()
+\item 
+Rand\+Num \hyperlink{group__metasim__random_gaa97fbc23d68f3fa5e35e87c8c09a9624}{Meta\+Sim\+::\+Random\+Gen\+::get\+Curr\+Seed} ()
+\item 
+Rand\+Num \hyperlink{group__metasim__random_gaac9729d6899351c58f6fd2684d0e62f8}{Meta\+Sim\+::\+Random\+Gen\+::get\+Module} ()
+\item 
+{\bfseries Meta\+Sim\+::\+Random\+Var\+::\+Exc\+::\+Exc} (string wh, string cl)\hypertarget{group__metasim__random_gada0552de367838edbddfb3e3cff56deb}{}\label{group__metasim__random_gada0552de367838edbddfb3e3cff56deb}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Random\+Var\+::\+Max\+Exception\+::\+Max\+Exception} (string cl)\hypertarget{group__metasim__random_ga8c3643b6a8089b10f8a5571985086e46}{}\label{group__metasim__random_ga8c3643b6a8089b10f8a5571985086e46}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Random\+Var\+::\+Max\+Exception\+::\+Max\+Exception} (string m, string cl)\hypertarget{group__metasim__random_gaaf779679462d5427eb0e2750f87bb505}{}\label{group__metasim__random_gaaf779679462d5427eb0e2750f87bb505}
+
+\item 
+virtual const char $\ast$ {\bfseries Meta\+Sim\+::\+Random\+Var\+::\+Max\+Exception\+::what} () const   throw ()\hypertarget{group__metasim__random_gaab0c7d52dfb90ee41c164e2a35230db9}{}\label{group__metasim__random_gaab0c7d52dfb90ee41c164e2a35230db9}
+
+\item 
+\hyperlink{group__metasim__random_ga465214e20898d424b2083c270361d161}{Meta\+Sim\+::\+Random\+Var\+::\+Random\+Var} (Random\+Gen $\ast$g=N\+U\+LL)
+\item 
+\hyperlink{group__metasim__random_ga22bc5cb0b21f5c0c72f0a15242c44a75}{Meta\+Sim\+::\+Random\+Var\+::\+Random\+Var} (const Random\+Var \&r)
+\item 
+static void \hyperlink{group__metasim__random_ga89cf38f1fd1b6cfd67ae022f6874f82e}{Meta\+Sim\+::\+Random\+Var\+::init} (Rand\+Num s)
+\item 
+static Random\+Gen $\ast$ \hyperlink{group__metasim__random_gaeb0c73814132d1d0631264ec94bbf9bc}{Meta\+Sim\+::\+Random\+Var\+::change\+Generator} (Random\+Gen $\ast$g)\hypertarget{group__metasim__random_gaeb0c73814132d1d0631264ec94bbf9bc}{}\label{group__metasim__random_gaeb0c73814132d1d0631264ec94bbf9bc}
+
+\begin{DoxyCompactList}\small\item\em Change the standard generator. \end{DoxyCompactList}\item 
+static void \hyperlink{group__metasim__random_ga606bcdbc13861b87d0857a1af29ad07e}{Meta\+Sim\+::\+Random\+Var\+::restore\+Generator} ()\hypertarget{group__metasim__random_ga606bcdbc13861b87d0857a1af29ad07e}{}\label{group__metasim__random_ga606bcdbc13861b87d0857a1af29ad07e}
+
+\begin{DoxyCompactList}\small\item\em Restore the standard generator. \end{DoxyCompactList}\item 
+virtual double \hyperlink{group__metasim__random_ga9299062bad4e4aa77c9cef1f687f964b}{Meta\+Sim\+::\+Random\+Var\+::get} ()=0
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Random\+Var\+::get\+Maximum} ()=0  throw (\+Max\+Exception)\hypertarget{group__metasim__random_ga26e8be376a727f8aec6c3f9500d5c800}{}\label{group__metasim__random_ga26e8be376a727f8aec6c3f9500d5c800}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Random\+Var\+::get\+Minimum} ()=0  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gaf1ac06f9877c567738b579389295a9c5}{}\label{group__metasim__random_gaf1ac06f9877c567738b579389295a9c5}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Delta\+Var\+::\+Delta\+Var} (double a)\hypertarget{group__metasim__random_ga1f1bad918b0d8198917bca88e0a68ee0}{}\label{group__metasim__random_ga1f1bad918b0d8198917bca88e0a68ee0}
+
+\item 
+virtual double \hyperlink{group__metasim__random_ga6657b65ec15929668867fbf873c4d801}{Meta\+Sim\+::\+Delta\+Var\+::get} ()
+\item 
+static Random\+Var $\ast$ {\bfseries Meta\+Sim\+::\+Delta\+Var\+::create\+Instance} (vector$<$ string $>$ \&par)\hypertarget{group__metasim__random_gaba7c96fe18b4fb173fb1507c804b47cd}{}\label{group__metasim__random_gaba7c96fe18b4fb173fb1507c804b47cd}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Delta\+Var\+::get\+Maximum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gaee9cbecedd8a4145d7dccfb512b60d11}{}\label{group__metasim__random_gaee9cbecedd8a4145d7dccfb512b60d11}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Delta\+Var\+::get\+Minimum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gae2d7ef4295390d902ef16114c3d79466}{}\label{group__metasim__random_gae2d7ef4295390d902ef16114c3d79466}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Uniform\+Var\+::\+Uniform\+Var} (double min, double max, Random\+Gen $\ast$g=N\+U\+LL)\hypertarget{group__metasim__random_ga890dfc75e4eeb6a2851aea1871d0ea54}{}\label{group__metasim__random_ga890dfc75e4eeb6a2851aea1871d0ea54}
+
+\item 
+virtual double \hyperlink{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}{Meta\+Sim\+::\+Uniform\+Var\+::get} ()
+\item 
+static Random\+Var $\ast$ {\bfseries Meta\+Sim\+::\+Uniform\+Var\+::create\+Instance} (vector$<$ string $>$ \&par)\hypertarget{group__metasim__random_ga06102a8d217a3ee2368b5e1b840fba55}{}\label{group__metasim__random_ga06102a8d217a3ee2368b5e1b840fba55}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Uniform\+Var\+::get\+Maximum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gaaf6dab9e856b86292734a8f87257a630}{}\label{group__metasim__random_gaaf6dab9e856b86292734a8f87257a630}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Uniform\+Var\+::get\+Minimum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_ga9678c16207bb916f6c3ff3ed03f81670}{}\label{group__metasim__random_ga9678c16207bb916f6c3ff3ed03f81670}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Exponential\+Var\+::\+Exponential\+Var} (double m, Random\+Gen $\ast$g=N\+U\+LL)\hypertarget{group__metasim__random_ga5f4cf462dd8d4893260986f47fa8c6a3}{}\label{group__metasim__random_ga5f4cf462dd8d4893260986f47fa8c6a3}
+
+\item 
+virtual double \hyperlink{group__metasim__random_ga84b931546a4cffde57bb958ac9f442d6}{Meta\+Sim\+::\+Exponential\+Var\+::get} ()
+\item 
+static Random\+Var $\ast$ {\bfseries Meta\+Sim\+::\+Exponential\+Var\+::create\+Instance} (vector$<$ string $>$ \&par)\hypertarget{group__metasim__random_gaf259c86b8f0d6b76ae34603273a54dc6}{}\label{group__metasim__random_gaf259c86b8f0d6b76ae34603273a54dc6}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Exponential\+Var\+::get\+Maximum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gacdfbf652d7a0209ff524ed8075746ccc}{}\label{group__metasim__random_gacdfbf652d7a0209ff524ed8075746ccc}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Exponential\+Var\+::get\+Minimum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_ga178ae60910a241c6e16f66388cecf3bf}{}\label{group__metasim__random_ga178ae60910a241c6e16f66388cecf3bf}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Pareto\+Var\+::\+Pareto\+Var} (double m, double k, Random\+Gen $\ast$g=N\+U\+LL)\hypertarget{group__metasim__random_ga9395cbfbe6209cbea72af1b7ff33a4b4}{}\label{group__metasim__random_ga9395cbfbe6209cbea72af1b7ff33a4b4}
+
+\item 
+virtual double \hyperlink{group__metasim__random_gaf87caabfbe4728672a7eb47e7e7af83b}{Meta\+Sim\+::\+Pareto\+Var\+::get} ()
+\item 
+static Random\+Var $\ast$ {\bfseries Meta\+Sim\+::\+Pareto\+Var\+::create\+Instance} (vector$<$ string $>$ \&par)\hypertarget{group__metasim__random_gaea903a3c27d80b0d8561821a927068ea}{}\label{group__metasim__random_gaea903a3c27d80b0d8561821a927068ea}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Pareto\+Var\+::get\+Maximum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gabb1bd247d67432f25e04c00bfdf28dd2}{}\label{group__metasim__random_gabb1bd247d67432f25e04c00bfdf28dd2}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Pareto\+Var\+::get\+Minimum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gaac777050fb53a06a7a11c546d090ba16}{}\label{group__metasim__random_gaac777050fb53a06a7a11c546d090ba16}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Normal\+Var\+::\+Normal\+Var} (double m, double s, Random\+Gen $\ast$g=N\+U\+LL)\hypertarget{group__metasim__random_gaeea8e72562f3b6dd8d4edde7b913d206}{}\label{group__metasim__random_gaeea8e72562f3b6dd8d4edde7b913d206}
+
+\item 
+virtual double \hyperlink{group__metasim__random_ga17f84e2aa93a6cf9c5574f4714440c1e}{Meta\+Sim\+::\+Normal\+Var\+::get} ()
+\item 
+static Random\+Var $\ast$ {\bfseries Meta\+Sim\+::\+Normal\+Var\+::create\+Instance} (vector$<$ string $>$ \&par)\hypertarget{group__metasim__random_ga1e5adca7dd0bd40fea16506323407528}{}\label{group__metasim__random_ga1e5adca7dd0bd40fea16506323407528}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Normal\+Var\+::get\+Maximum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_ga25eef12ebe31b36c24835f425e023c0a}{}\label{group__metasim__random_ga25eef12ebe31b36c24835f425e023c0a}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Normal\+Var\+::get\+Minimum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gafd3ea9acd7f031c3abf5337b05119c86}{}\label{group__metasim__random_gafd3ea9acd7f031c3abf5337b05119c86}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Poisson\+Var\+::\+Poisson\+Var} (double l, Random\+Gen $\ast$g=N\+U\+LL)\hypertarget{group__metasim__random_gad3bf380adb8787f5238f813d068cdcd3}{}\label{group__metasim__random_gad3bf380adb8787f5238f813d068cdcd3}
+
+\item 
+virtual double \hyperlink{group__metasim__random_gad487efc5f4bdde3e38e8bea5f937ef9b}{Meta\+Sim\+::\+Poisson\+Var\+::get} ()
+\item 
+static Random\+Var $\ast$ {\bfseries Meta\+Sim\+::\+Poisson\+Var\+::create\+Instance} (vector$<$ string $>$ \&par)\hypertarget{group__metasim__random_gaf4d4384c03b6c7ceabb1a547e1fefbb9}{}\label{group__metasim__random_gaf4d4384c03b6c7ceabb1a547e1fefbb9}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Poisson\+Var\+::get\+Maximum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_ga60a02d8cc1f1edbb1d1fa1196e52eb12}{}\label{group__metasim__random_ga60a02d8cc1f1edbb1d1fa1196e52eb12}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Poisson\+Var\+::get\+Minimum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_ga680cf6dff2240d8142669c4f4116c078}{}\label{group__metasim__random_ga680cf6dff2240d8142669c4f4116c078}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Det\+Var\+::\+Det\+Var} (const std\+::string \&filename)\hypertarget{group__metasim__random_ga9dc9e400326612a9d6e1aa855c0725c9}{}\label{group__metasim__random_ga9dc9e400326612a9d6e1aa855c0725c9}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Det\+Var\+::\+Det\+Var} (vector$<$ double $>$ \&a)\hypertarget{group__metasim__random_ga542ecc890f0ecaf7b039184058a1ab61}{}\label{group__metasim__random_ga542ecc890f0ecaf7b039184058a1ab61}
+
+\item 
+{\bfseries Meta\+Sim\+::\+Det\+Var\+::\+Det\+Var} (double a\mbox{[}$\,$\mbox{]}, int s)\hypertarget{group__metasim__random_ga903b0d6bd2de0215e12c154bac094b47}{}\label{group__metasim__random_ga903b0d6bd2de0215e12c154bac094b47}
+
+\item 
+virtual double \hyperlink{group__metasim__random_ga91b5ba566ff6005e2bdfc18f8691cd85}{Meta\+Sim\+::\+Det\+Var\+::get} ()
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Det\+Var\+::get\+Maximum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_ga497a4f7a09bd637f1032a4a773758804}{}\label{group__metasim__random_ga497a4f7a09bd637f1032a4a773758804}
+
+\item 
+virtual double {\bfseries Meta\+Sim\+::\+Det\+Var\+::get\+Minimum} ()  throw (\+Max\+Exception)\hypertarget{group__metasim__random_gabde8b77ad92bb24b4371250e32f3f5e0}{}\label{group__metasim__random_gabde8b77ad92bb24b4371250e32f3f5e0}
+
+\item 
+static Random\+Var $\ast$ {\bfseries Meta\+Sim\+::\+Det\+Var\+::create\+Instance} (vector$<$ string $>$ \&par)\hypertarget{group__metasim__random_ga26c0231a13becbba35cd539111540655}{}\label{group__metasim__random_ga26c0231a13becbba35cd539111540655}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static Rand\+Num {\bfseries Meta\+Sim\+::\+Random\+Var\+::\+\_\+seed}\hypertarget{group__metasim__random_gad037b5279195393ad61d448a631ef026}{}\label{group__metasim__random_gad037b5279195393ad61d448a631ef026}
+
+\item 
+static Rand\+Num {\bfseries Meta\+Sim\+::\+Random\+Var\+::\+\_\+xn}\hypertarget{group__metasim__random_ga942c2e335a84a00304b7920a6ee2c638}{}\label{group__metasim__random_ga942c2e335a84a00304b7920a6ee2c638}
+
+\item 
+static Random\+Gen \hyperlink{group__metasim__random_ga074de34f085259b7b9911e9f0a808d6b}{Meta\+Sim\+::\+Random\+Var\+::\+\_\+stdgen}\hypertarget{group__metasim__random_ga074de34f085259b7b9911e9f0a808d6b}{}\label{group__metasim__random_ga074de34f085259b7b9911e9f0a808d6b}
+
+\begin{DoxyCompactList}\small\item\em Default generator. \end{DoxyCompactList}\item 
+static Random\+Gen $\ast$ \hyperlink{group__metasim__random_ga920839e50710a224882a290bc132322d}{Meta\+Sim\+::\+Random\+Var\+::\+\_\+pstdgen}
+\item 
+Random\+Gen $\ast$ \hyperlink{group__metasim__random_ga64ccafdc8f32743c6b6bba7bfc1df4ff}{Meta\+Sim\+::\+Random\+Var\+::\+\_\+gen}
+\item 
+static const char $\ast$const {\bfseries Meta\+Sim\+::\+Random\+Var\+::\+Exc\+::\+\_\+\+F\+I\+L\+E\+O\+P\+EN} = \char`\"{}Unable to open Rand\+File\char`\"{}\hypertarget{group__metasim__random_gad70df72288377f42fcbbf83d02c58ae5}{}\label{group__metasim__random_gad70df72288377f42fcbbf83d02c58ae5}
+
+\item 
+static const char $\ast$const {\bfseries Meta\+Sim\+::\+Random\+Var\+::\+Exc\+::\+\_\+\+F\+I\+L\+E\+C\+L\+O\+SE} = \char`\"{}Too short Rand\+File\char`\"{}\hypertarget{group__metasim__random_ga0f916e4cb47dfc2db70f5a5f12f95ef7}{}\label{group__metasim__random_ga0f916e4cb47dfc2db70f5a5f12f95ef7}
+
+\item 
+static const char $\ast$const {\bfseries Meta\+Sim\+::\+Random\+Var\+::\+Exc\+::\+\_\+\+W\+R\+O\+N\+G\+P\+DF} = \char`\"{}Malformed P\+DF\char`\"{}\hypertarget{group__metasim__random_ga0560184f565fd1c7029cfc0fb8e9f106}{}\label{group__metasim__random_ga0560184f565fd1c7029cfc0fb8e9f106}
+
+\item 
+static const unsigned long {\bfseries Meta\+Sim\+::\+Poisson\+Var\+::\+C\+U\+T\+O\+FF} = 10000\hypertarget{group__metasim__random_ga79e2ab0f58f4932ca6c1821b6aeb6662}{}\label{group__metasim__random_ga79e2ab0f58f4932ca6c1821b6aeb6662}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This classes are used to generate pseudo-\/random numbers according to a certain distribution. Every derived class should implement a given distribution. This class is abstract\+: a derived class must overload method get() to return a double. Future Work\+: extend the class to support different pseudo-\/casual number generators.
+
+\begin{DoxyAuthor}{Author}
+Giuseppe Lipari, Gerardo Lamastra, Antonino Casile. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Function Documentation}
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()=0}{get()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Meta\+Sim\+::\+Random\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{group__metasim__random_ga9299062bad4e4aa77c9cef1f687f964b}{}\label{group__metasim__random_ga9299062bad4e4aa77c9cef1f687f964b}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Implemented in \hyperlink{group__metasim__random_ga91b5ba566ff6005e2bdfc18f8691cd85}{Meta\+Sim\+::\+Det\+Var}, \hyperlink{group__metasim__random_gad487efc5f4bdde3e38e8bea5f937ef9b}{Meta\+Sim\+::\+Poisson\+Var}, \hyperlink{group__metasim__random_ga17f84e2aa93a6cf9c5574f4714440c1e}{Meta\+Sim\+::\+Normal\+Var}, \hyperlink{group__metasim__random_gaf87caabfbe4728672a7eb47e7e7af83b}{Meta\+Sim\+::\+Pareto\+Var}, \hyperlink{group__metasim__random_ga84b931546a4cffde57bb958ac9f442d6}{Meta\+Sim\+::\+Exponential\+Var}, \hyperlink{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}{Meta\+Sim\+::\+Uniform\+Var}, \hyperlink{group__metasim__random_ga6657b65ec15929668867fbf873c4d801}{Meta\+Sim\+::\+Delta\+Var}, and \hyperlink{classMetaSim_1_1GenericVar_a0532274062a6b220c2b99e591562cc64}{Meta\+Sim\+::\+Generic\+Var}.
+
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Meta\+Sim\+::\+Delta\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{group__metasim__random_ga6657b65ec15929668867fbf873c4d801}{}\label{group__metasim__random_ga6657b65ec15929668867fbf873c4d801}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Implements \hyperlink{group__metasim__random_ga9299062bad4e4aa77c9cef1f687f964b}{Meta\+Sim\+::\+Random\+Var}.
+
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Uniform\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}{}\label{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Implements \hyperlink{group__metasim__random_ga9299062bad4e4aa77c9cef1f687f964b}{Meta\+Sim\+::\+Random\+Var}.
+
+
+
+Reimplemented in \hyperlink{group__metasim__random_gad487efc5f4bdde3e38e8bea5f937ef9b}{Meta\+Sim\+::\+Poisson\+Var}, \hyperlink{group__metasim__random_ga17f84e2aa93a6cf9c5574f4714440c1e}{Meta\+Sim\+::\+Normal\+Var}, \hyperlink{group__metasim__random_gaf87caabfbe4728672a7eb47e7e7af83b}{Meta\+Sim\+::\+Pareto\+Var}, \hyperlink{group__metasim__random_ga84b931546a4cffde57bb958ac9f442d6}{Meta\+Sim\+::\+Exponential\+Var}, and \hyperlink{classMetaSim_1_1GenericVar_a0532274062a6b220c2b99e591562cc64}{Meta\+Sim\+::\+Generic\+Var}.
+
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Exponential\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{group__metasim__random_ga84b931546a4cffde57bb958ac9f442d6}{}\label{group__metasim__random_ga84b931546a4cffde57bb958ac9f442d6}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Reimplemented from \hyperlink{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}{Meta\+Sim\+::\+Uniform\+Var}.
+
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Pareto\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{group__metasim__random_gaf87caabfbe4728672a7eb47e7e7af83b}{}\label{group__metasim__random_gaf87caabfbe4728672a7eb47e7e7af83b}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Reimplemented from \hyperlink{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}{Meta\+Sim\+::\+Uniform\+Var}.
+
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Normal\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{group__metasim__random_ga17f84e2aa93a6cf9c5574f4714440c1e}{}\label{group__metasim__random_ga17f84e2aa93a6cf9c5574f4714440c1e}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Reimplemented from \hyperlink{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}{Meta\+Sim\+::\+Uniform\+Var}.
+
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Poisson\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{group__metasim__random_gad487efc5f4bdde3e38e8bea5f937ef9b}{}\label{group__metasim__random_gad487efc5f4bdde3e38e8bea5f937ef9b}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Reimplemented from \hyperlink{group__metasim__random_gacc8e14498f0e48cbece5f65f52c65020}{Meta\+Sim\+::\+Uniform\+Var}.
+
+\index{Random Variables@{Random Variables}!get@{get}}
+\index{get@{get}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}double Meta\+Sim\+::\+Det\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{group__metasim__random_ga91b5ba566ff6005e2bdfc18f8691cd85}{}\label{group__metasim__random_ga91b5ba566ff6005e2bdfc18f8691cd85}
+This method must be overloaded in each derived class to return a double according to the propoer distriibution. 
+
+Implements \hyperlink{group__metasim__random_ga9299062bad4e4aa77c9cef1f687f964b}{Meta\+Sim\+::\+Random\+Var}.
+
+\index{Random Variables@{Random Variables}!get\+Curr\+Seed@{get\+Curr\+Seed}}
+\index{get\+Curr\+Seed@{get\+Curr\+Seed}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get\+Curr\+Seed()}{getCurrSeed()}}]{\setlength{\rightskip}{0pt plus 5cm}Rand\+Num Meta\+Sim\+::\+Random\+Gen\+::get\+Curr\+Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__metasim__random_gaa97fbc23d68f3fa5e35e87c8c09a9624}{}\label{group__metasim__random_gaa97fbc23d68f3fa5e35e87c8c09a9624}
+Returns the current sequence number. \index{Random Variables@{Random Variables}!get\+Module@{get\+Module}}
+\index{get\+Module@{get\+Module}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{get\+Module()}{getModule()}}]{\setlength{\rightskip}{0pt plus 5cm}Rand\+Num Meta\+Sim\+::\+Random\+Gen\+::get\+Module (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{group__metasim__random_gaac9729d6899351c58f6fd2684d0e62f8}{}\label{group__metasim__random_gaac9729d6899351c58f6fd2684d0e62f8}
+return the constant M (the module of this random generator \index{Random Variables@{Random Variables}!init@{init}}
+\index{init@{init}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{init(\+Rand\+Num s)}{init(RandNum s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Meta\+Sim\+::\+Random\+Gen\+::init (
+\begin{DoxyParamCaption}
+\item[{Rand\+Num}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{group__metasim__random_ga533a4ad9a71fafe04a6b25491cd38e0b}{}\label{group__metasim__random_ga533a4ad9a71fafe04a6b25491cd38e0b}
+Initialize the generator with seed s \index{Random Variables@{Random Variables}!init@{init}}
+\index{init@{init}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{init(\+Rand\+Num s)}{init(RandNum s)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Meta\+Sim\+::\+Random\+Var\+::init (
+\begin{DoxyParamCaption}
+\item[{Rand\+Num}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{group__metasim__random_ga89cf38f1fd1b6cfd67ae022f6874f82e}{}\label{group__metasim__random_ga89cf38f1fd1b6cfd67ae022f6874f82e}
+Initialize the standard generator with a given seed \index{Random Variables@{Random Variables}!Random\+Gen@{Random\+Gen}}
+\index{Random\+Gen@{Random\+Gen}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{Random\+Gen(\+Rand\+Num s)}{RandomGen(RandNum s)}}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Sim\+::\+Random\+Gen\+::\+Random\+Gen (
+\begin{DoxyParamCaption}
+\item[{Rand\+Num}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{group__metasim__random_gabaa90db3234c032b6650a1cffb523a55}{}\label{group__metasim__random_gabaa90db3234c032b6650a1cffb523a55}
+Creates a Random Generator with s as initial seed. See file include/seeds.\+h for a list of seeds. \index{Random Variables@{Random Variables}!Random\+Var@{Random\+Var}}
+\index{Random\+Var@{Random\+Var}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{Random\+Var(\+Random\+Gen $\ast$g=\+N\+U\+L\+L)}{RandomVar(RandomGen *g=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Sim\+::\+Random\+Var\+::\+Random\+Var (
+\begin{DoxyParamCaption}
+\item[{{\bf Random\+Gen} $\ast$}]{g = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__metasim__random_ga465214e20898d424b2083c270361d161}{}\label{group__metasim__random_ga465214e20898d424b2083c270361d161}
+Constructor for \hyperlink{classMetaSim_1_1RandomVar}{Random\+Var}. It takes as argument the random number generator. By default, this is equal to \+\_\+pstdgen. It is possible to change the default generator with \hyperlink{group__metasim__random_gaeb0c73814132d1d0631264ec94bbf9bc}{change\+Generator()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The random number generator. By default, this is N\+U\+LL, which means that the default generator is \+\_\+pstdgen \\
+\hline
+\end{DoxyParams}
+\index{Random Variables@{Random Variables}!Random\+Var@{Random\+Var}}
+\index{Random\+Var@{Random\+Var}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{Random\+Var(const Random\+Var \&r)}{RandomVar(const RandomVar &r)}}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Sim\+::\+Random\+Var\+::\+Random\+Var (
+\begin{DoxyParamCaption}
+\item[{const {\bf Random\+Var} \&}]{r}
+\end{DoxyParamCaption}
+)}\hypertarget{group__metasim__random_ga22bc5cb0b21f5c0c72f0a15242c44a75}{}\label{group__metasim__random_ga22bc5cb0b21f5c0c72f0a15242c44a75}
+Copy constructor. \index{Random Variables@{Random Variables}!sample@{sample}}
+\index{sample@{sample}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{sample()}{sample()}}]{\setlength{\rightskip}{0pt plus 5cm}Rand\+Num Meta\+Sim\+::\+Random\+Gen\+::sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group__metasim__random_ga94a34514116b265e8fd0bbbd35d662d9}{}\label{group__metasim__random_ga94a34514116b265e8fd0bbbd35d662d9}
+extract the next random number from the sequence 
+
+\subsection{Variable Documentation}
+\index{Random Variables@{Random Variables}!\+\_\+gen@{\+\_\+gen}}
+\index{\+\_\+gen@{\+\_\+gen}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{\+\_\+gen}{_gen}}]{\setlength{\rightskip}{0pt plus 5cm}Random\+Gen$\ast$ Meta\+Sim\+::\+Random\+Var\+::\+\_\+gen\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{group__metasim__random_ga64ccafdc8f32743c6b6bba7bfc1df4ff}{}\label{group__metasim__random_ga64ccafdc8f32743c6b6bba7bfc1df4ff}
+The current random generator (used by this object). By default, it is equal to \+\_\+pstdgen \index{Random Variables@{Random Variables}!\+\_\+pstdgen@{\+\_\+pstdgen}}
+\index{\+\_\+pstdgen@{\+\_\+pstdgen}!Random Variables@{Random Variables}}
+\subsubsection[{\texorpdfstring{\+\_\+pstdgen}{_pstdgen}}]{\setlength{\rightskip}{0pt plus 5cm}Random\+Gen$\ast$ Meta\+Sim\+::\+Random\+Var\+::\+\_\+pstdgen\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{group__metasim__random_ga920839e50710a224882a290bc132322d}{}\label{group__metasim__random_ga920839e50710a224882a290bc132322d}
+Pointer to the current generator (used by the next \hyperlink{classMetaSim_1_1RandomVar}{Random\+Var} object to be created. 

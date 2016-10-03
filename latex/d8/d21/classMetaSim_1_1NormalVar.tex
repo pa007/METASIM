@@ -1,0 +1,40 @@
+\hypertarget{classMetaSim_1_1NormalVar}{}\section{Meta\+Sim\+:\+:Normal\+Var Class Reference}
+\label{classMetaSim_1_1NormalVar}\index{Meta\+Sim\+::\+Normal\+Var@{Meta\+Sim\+::\+Normal\+Var}}
+
+
+{\ttfamily \#include $<$randomvar.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Normal\+Var\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:Normal\+Var\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Normal\+Var} (double m, double s, \hyperlink{classMetaSim_1_1RandomGen}{Random\+Gen} $\ast$g=N\+U\+LL)
+\item 
+virtual double \hyperlink{group__metasim__random_ga17f84e2aa93a6cf9c5574f4714440c1e}{get} ()
+\item 
+virtual double {\bfseries get\+Maximum} ()  throw (\+Max\+Exception)
+\item 
+virtual double {\bfseries get\+Minimum} ()  throw (\+Max\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMetaSim_1_1RandomVar}{Random\+Var} $\ast$ {\bfseries create\+Instance} (vector$<$ string $>$ \&par)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class implements a normal distribution, with mean m variance sigma. In this class, we use the cephes library function ndtri(). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/randomvar.\+hpp\item 
+src/randomvar.\+cpp\end{DoxyCompactItemize}

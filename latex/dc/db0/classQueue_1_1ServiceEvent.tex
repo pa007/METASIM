@@ -1,0 +1,45 @@
+\hypertarget{classQueue_1_1ServiceEvent}{}\section{Queue\+:\+:Service\+Event Class Reference}
+\label{classQueue_1_1ServiceEvent}\index{Queue\+::\+Service\+Event@{Queue\+::\+Service\+Event}}
+
+
+{\ttfamily \#include $<$queue.\+hpp$>$}
+
+
+
+Inheritance diagram for Queue\+:\+:Service\+Event\+:
+% FIG 0
+
+
+Collaboration diagram for Queue\+:\+:Service\+Event\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Service\+Event} (\hyperlink{classQueue}{Queue} \&q)\hypertarget{classQueue_1_1ServiceEvent_aee7a3f1c56008dc3ff3bcc2e5e3b3fcc}{}\label{classQueue_1_1ServiceEvent_aee7a3f1c56008dc3ff3bcc2e5e3b3fcc}
+
+\item 
+virtual void \hyperlink{classQueue_1_1ServiceEvent_a5f9784f40ba49e3cbe9c2138ba3f3f35}{doit} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class models an event of packed served. When a packet is ready to be served, an event of this type is {\itshape posted} in the future. When that time comes, the {\itshape \hyperlink{classQueue_1_1ServiceEvent_a5f9784f40ba49e3cbe9c2138ba3f3f35}{doit()}} method is invoked. 
+
+\subsection{Member Function Documentation}
+\index{Queue\+::\+Service\+Event@{Queue\+::\+Service\+Event}!doit@{doit}}
+\index{doit@{doit}!Queue\+::\+Service\+Event@{Queue\+::\+Service\+Event}}
+\subsubsection[{\texorpdfstring{doit()}{doit()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Queue\+::\+Service\+Event\+::doit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classQueue_1_1ServiceEvent_a5f9784f40ba49e3cbe9c2138ba3f3f35}{}\label{classQueue_1_1ServiceEvent_a5f9784f40ba49e3cbe9c2138ba3f3f35}
+Must be defined for every derived class. This method is called from the \hyperlink{classMetaSim_1_1Event_afdad9f12b7b4632903902cc83f877333}{action()} method. 
+
+Implements \hyperlink{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{Meta\+Sim\+::\+Event}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/queue/queue.\+hpp\end{DoxyCompactItemize}

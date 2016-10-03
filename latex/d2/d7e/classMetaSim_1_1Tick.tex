@@ -1,0 +1,157 @@
+\hypertarget{classMetaSim_1_1Tick}{}\section{Meta\+Sim\+:\+:Tick Class Reference}
+\label{classMetaSim_1_1Tick}\index{Meta\+Sim\+::\+Tick@{Meta\+Sim\+::\+Tick}}
+
+
+{\ttfamily \#include $<$tick.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries unit\+\_\+t} \{ {\bfseries nanosec} = 1, 
+{\bfseries microsec} = 1000, 
+{\bfseries millisec} = 1000000, 
+{\bfseries sec} = 1000000000
+ \}\hypertarget{classMetaSim_1_1Tick_ad4dee6f558fbd1f3311a571360a14bbe}{}\label{classMetaSim_1_1Tick_ad4dee6f558fbd1f3311a571360a14bbe}
+
+\item 
+typedef int64\+\_\+t {\bfseries impl\+\_\+t}\hypertarget{classMetaSim_1_1Tick_aae7d602da4877764ee02af8c8e4426b8}{}\label{classMetaSim_1_1Tick_aae7d602da4877764ee02af8c8e4426b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Tick} (impl\+\_\+t t)\hypertarget{classMetaSim_1_1Tick_aff81a86bed9d6e1dcd384e765db0823e}{}\label{classMetaSim_1_1Tick_aff81a86bed9d6e1dcd384e765db0823e}
+
+\item 
+{\bfseries Tick} (int t)\hypertarget{classMetaSim_1_1Tick_a733e79a44b93cbf12c6c9e8f0595e797}{}\label{classMetaSim_1_1Tick_a733e79a44b93cbf12c6c9e8f0595e797}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick_a165f1d8bd981c7e85706c44ea42f8784}{Tick} (const std\+::string \&s)\hypertarget{classMetaSim_1_1Tick_a165f1d8bd981c7e85706c44ea42f8784}{}\label{classMetaSim_1_1Tick_a165f1d8bd981c7e85706c44ea42f8784}
+
+\begin{DoxyCompactList}\small\item\em implementation in tick.\+pp \end{DoxyCompactList}\item 
+\hyperlink{classMetaSim_1_1Tick_ac1771add57d2d8a66c3d734accfb75f2}{Tick} (double t)\hypertarget{classMetaSim_1_1Tick_ac1771add57d2d8a66c3d734accfb75f2}{}\label{classMetaSim_1_1Tick_ac1771add57d2d8a66c3d734accfb75f2}
+
+\begin{DoxyCompactList}\small\item\em explicit conversion with trunking \end{DoxyCompactList}\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \& {\bfseries operator+=} (const \hyperlink{classMetaSim_1_1Tick}{Tick} \&t)\hypertarget{classMetaSim_1_1Tick_aae85814bf1f3181344f2a6428cb518f3}{}\label{classMetaSim_1_1Tick_aae85814bf1f3181344f2a6428cb518f3}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \& {\bfseries operator-\/=} (const \hyperlink{classMetaSim_1_1Tick}{Tick} \&t)\hypertarget{classMetaSim_1_1Tick_af338e6e43747e74f8126789bd8d79eac}{}\label{classMetaSim_1_1Tick_af338e6e43747e74f8126789bd8d79eac}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \& {\bfseries operator$\ast$=} (long int t)\hypertarget{classMetaSim_1_1Tick_a7ed3a5182b608c36d73179f157d445f7}{}\label{classMetaSim_1_1Tick_a7ed3a5182b608c36d73179f157d445f7}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \& {\bfseries operator/=} (long int t)\hypertarget{classMetaSim_1_1Tick_a2d45075082c270c210b68fa44926db31}{}\label{classMetaSim_1_1Tick_a2d45075082c270c210b68fa44926db31}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \& \hyperlink{classMetaSim_1_1Tick_acfa2678a4507bb47033a41ecf34eb5c7}{operator++} ()\hypertarget{classMetaSim_1_1Tick_acfa2678a4507bb47033a41ecf34eb5c7}{}\label{classMetaSim_1_1Tick_acfa2678a4507bb47033a41ecf34eb5c7}
+
+\begin{DoxyCompactList}\small\item\em pre-\/increment \end{DoxyCompactList}\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \hyperlink{classMetaSim_1_1Tick_ad2294e474fe73343b9e4c8354e7eb4ce}{operator++} (int)\hypertarget{classMetaSim_1_1Tick_ad2294e474fe73343b9e4c8354e7eb4ce}{}\label{classMetaSim_1_1Tick_ad2294e474fe73343b9e4c8354e7eb4ce}
+
+\begin{DoxyCompactList}\small\item\em post-\/increment \end{DoxyCompactList}\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \& \hyperlink{classMetaSim_1_1Tick_a8921a6e3713ffddda093ea1149dec038}{operator-\/-\/} ()\hypertarget{classMetaSim_1_1Tick_a8921a6e3713ffddda093ea1149dec038}{}\label{classMetaSim_1_1Tick_a8921a6e3713ffddda093ea1149dec038}
+
+\begin{DoxyCompactList}\small\item\em pre-\/decrement \end{DoxyCompactList}\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} \hyperlink{classMetaSim_1_1Tick_ad12524fc1ad4f7736d85c838d2ebaaee}{operator-\/-\/} (int)\hypertarget{classMetaSim_1_1Tick_ad12524fc1ad4f7736d85c838d2ebaaee}{}\label{classMetaSim_1_1Tick_ad12524fc1ad4f7736d85c838d2ebaaee}
+
+\begin{DoxyCompactList}\small\item\em post-\/decrement \end{DoxyCompactList}\item 
+{\bfseries operator double} () const \hypertarget{classMetaSim_1_1Tick_a24441fea9d1915dd37b968b5832a2bc1}{}\label{classMetaSim_1_1Tick_a24441fea9d1915dd37b968b5832a2bc1}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick_a18e9dcdaeaf35eca4411160645e40d9d}{operator long int} () const \hypertarget{classMetaSim_1_1Tick_a18e9dcdaeaf35eca4411160645e40d9d}{}\label{classMetaSim_1_1Tick_a18e9dcdaeaf35eca4411160645e40d9d}
+
+\begin{DoxyCompactList}\small\item\em automatic conversion to long int \end{DoxyCompactList}\item 
+\hyperlink{classMetaSim_1_1Tick_aff22cbee5dd1e6e60f14132496718a39}{operator int} () const \hypertarget{classMetaSim_1_1Tick_aff22cbee5dd1e6e60f14132496718a39}{}\label{classMetaSim_1_1Tick_aff22cbee5dd1e6e60f14132496718a39}
+
+\begin{DoxyCompactList}\small\item\em automatic conversion to int (warning, this may be imprecise!) \end{DoxyCompactList}\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (bool,$<$)\hypertarget{classMetaSim_1_1Tick_a3815cc158977e54a7c829bfdf20e40c2}{}\label{classMetaSim_1_1Tick_a3815cc158977e54a7c829bfdf20e40c2}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (bool,$<$=)\hypertarget{classMetaSim_1_1Tick_a0dc5f436fe5ee41be09b2088a8135b87}{}\label{classMetaSim_1_1Tick_a0dc5f436fe5ee41be09b2088a8135b87}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (bool,==)\hypertarget{classMetaSim_1_1Tick_a16dda82ac94545ae8e46defd9a25156a}{}\label{classMetaSim_1_1Tick_a16dda82ac94545ae8e46defd9a25156a}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (bool,!=)\hypertarget{classMetaSim_1_1Tick_a8837e04368a6195a8bbf0fe9d97acfcf}{}\label{classMetaSim_1_1Tick_a8837e04368a6195a8bbf0fe9d97acfcf}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (bool, $>$=)\hypertarget{classMetaSim_1_1Tick_a71b594111b80725201ac4cebdd1e510b}{}\label{classMetaSim_1_1Tick_a71b594111b80725201ac4cebdd1e510b}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (bool, $>$)\hypertarget{classMetaSim_1_1Tick_a192400ebe2b50ead83df76edc41bc6a5}{}\label{classMetaSim_1_1Tick_a192400ebe2b50ead83df76edc41bc6a5}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (\hyperlink{classMetaSim_1_1Tick}{Tick},$\ast$)\hypertarget{classMetaSim_1_1Tick_abd3cbc48a55698c5d30e1306c7f6224a}{}\label{classMetaSim_1_1Tick_abd3cbc48a55698c5d30e1306c7f6224a}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (\hyperlink{classMetaSim_1_1Tick}{Tick},+)\hypertarget{classMetaSim_1_1Tick_a9d891ecbac8ca05c9f9c6fdb59d8b0e1}{}\label{classMetaSim_1_1Tick_a9d891ecbac8ca05c9f9c6fdb59d8b0e1}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+S\+Y\+M\+M\+\_\+\+O\+PS} (\hyperlink{classMetaSim_1_1Tick}{Tick},-\/)\hypertarget{classMetaSim_1_1Tick_a9176b7e3c439dd4e4654fcee5a2e817d}{}\label{classMetaSim_1_1Tick_a9176b7e3c439dd4e4654fcee5a2e817d}
+
+\item 
+{\bfseries F\+R\+I\+E\+N\+D\+\_\+\+D\+E\+C\+L\+\_\+\+A\+S\+Y\+M\+M\+\_\+\+O\+PS} (\hyperlink{classMetaSim_1_1Tick}{Tick},/)\hypertarget{classMetaSim_1_1Tick_a9520a25eaa6e65171f133ffd84d4e121}{}\label{classMetaSim_1_1Tick_a9520a25eaa6e65171f133ffd84d4e121}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMetaSim_1_1Tick}{Tick} {\bfseries round} (double t)\hypertarget{classMetaSim_1_1Tick_a98c4a304c06f2caf0ef90de26f53569b}{}\label{classMetaSim_1_1Tick_a98c4a304c06f2caf0ef90de26f53569b}
+
+\item 
+static \hyperlink{classMetaSim_1_1Tick}{Tick} \hyperlink{classMetaSim_1_1Tick_a3a0619e1e21120f00ec0b50395cae780}{ceil} (double t)\hypertarget{classMetaSim_1_1Tick_a3a0619e1e21120f00ec0b50395cae780}{}\label{classMetaSim_1_1Tick_a3a0619e1e21120f00ec0b50395cae780}
+
+\begin{DoxyCompactList}\small\item\em ceiling \end{DoxyCompactList}\item 
+static \hyperlink{classMetaSim_1_1Tick}{Tick} \hyperlink{classMetaSim_1_1Tick_a4dca712eeda03c032f0c3fe5533cc615}{floor} (double t)\hypertarget{classMetaSim_1_1Tick_a4dca712eeda03c032f0c3fe5533cc615}{}\label{classMetaSim_1_1Tick_a4dca712eeda03c032f0c3fe5533cc615}
+
+\begin{DoxyCompactList}\small\item\em floor \end{DoxyCompactList}\item 
+static void {\bfseries set\+\_\+default\+\_\+unit} (Tick\+::unit\+\_\+t d)\hypertarget{classMetaSim_1_1Tick_ad7b17cc5fbadcbeb29bc467ac0d6a94d}{}\label{classMetaSim_1_1Tick_ad7b17cc5fbadcbeb29bc467ac0d6a94d}
+
+\item 
+static void \hyperlink{classMetaSim_1_1Tick_a16cbae4eaab1ae3bb8d328a783a839af}{set\+\_\+resolution} (const std\+::string \&t)  throw (parse\+\_\+util\+::\+Parse\+Exc)\hypertarget{classMetaSim_1_1Tick_a16cbae4eaab1ae3bb8d328a783a839af}{}\label{classMetaSim_1_1Tick_a16cbae4eaab1ae3bb8d328a783a839af}
+
+\begin{DoxyCompactList}\small\item\em implementation in tick.\+pp \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Tick} {\bfseries operator-\/} (const \hyperlink{classMetaSim_1_1Tick}{Tick} \&t)\hypertarget{classMetaSim_1_1Tick_aa8d3167141658b82d617d13d84345fed}{}\label{classMetaSim_1_1Tick_aa8d3167141658b82d617d13d84345fed}
+
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classMetaSim_1_1Tick}{Tick} \&t1)\hypertarget{classMetaSim_1_1Tick_af4fdac13f8cbc225c2346e2c4005e80e}{}\label{classMetaSim_1_1Tick_af4fdac13f8cbc225c2346e2c4005e80e}
+
+\item 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&is, \hyperlink{classMetaSim_1_1Tick}{Tick} \&t1)\hypertarget{classMetaSim_1_1Tick_a04a36649b1dfd58da0ee6cf4770af5a5}{}\label{classMetaSim_1_1Tick_a04a36649b1dfd58da0ee6cf4770af5a5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements the basic type for discrete time in the simulation. The current implementation is int64\+\_\+t. It provides\+:
+
+
+\begin{DoxyItemize}
+\item automatic cast and conversion from basic types;
+\item resolution specification (how many ticks in a second);
+\item conversion from string (with or specification of the unit measure);
+\item arithmetic operations and comparison;
+\item conversions to string types (with specification of the unit of measure).
+\end{DoxyItemize}
+
+Possible units are\+:
+
+
+\begin{DoxyItemize}
+\item seconds (s);
+\item milli (ms);
+\item micro (us);
+\item nano (ns);
+\end{DoxyItemize}
+
+The simulator handles all time variables in Ticks. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/tick.\+hpp\item 
+src/tick.\+cpp\end{DoxyCompactItemize}

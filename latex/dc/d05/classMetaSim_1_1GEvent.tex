@@ -1,0 +1,85 @@
+\hypertarget{classMetaSim_1_1GEvent}{}\section{Meta\+Sim\+:\+:G\+Event$<$ X $>$ Class Template Reference}
+\label{classMetaSim_1_1GEvent}\index{Meta\+Sim\+::\+G\+Event$<$ X $>$@{Meta\+Sim\+::\+G\+Event$<$ X $>$}}
+
+
+{\ttfamily \#include $<$gevent.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:G\+Event$<$ X $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:G\+Event$<$ X $>$\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1GEvent_a1207c10d8f19e77fcfc10fea1e07a179}{G\+Event} (\hyperlink{classMetaSim_1_1GEvent}{G\+Event}$<$ X $>$ \&e)
+\item 
+{\bfseries G\+Event} (X $\ast$obj, typename \hyperlink{classMetaSim_1_1GEvent}{G\+Event}$<$ X $>$\+::Pmemfun fun, int p=\hyperlink{classMetaSim_1_1Event_a93a8a4b3c1db0fdd2fadd7345f0b8c42}{Event\+::\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY})\hypertarget{classMetaSim_1_1GEvent_af2f285996e2fffa52dd1e942fa16d013}{}\label{classMetaSim_1_1GEvent_af2f285996e2fffa52dd1e942fa16d013}
+
+\item 
+virtual void \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{doit} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class X$>$\\*
+class Meta\+Sim\+::\+G\+Event$<$ X $>$}
+
+This template class is used for simplifying the writing of a system model. Most of the times, the \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{doit()} method of an event must only call a handler method of some class. Normally, you must write a new class derived from event and override the virtual \hyperlink{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{doit()} method. However, it is a lot of repetitive work! And when there is a lot of repetitive work to do, template is the solution!
+
+The \hyperlink{classMetaSim_1_1GEvent}{G\+Event} class takes a class derived from \hyperlink{classMetaSim_1_1Entity}{Entity} as a template argument. Then, template function register\+\_\+handler() must be called passing the pointer to the handler before using this event.
+
+An example of usage is found in example/eth/netinterface.\+hpp\+:
+
+ 
+\begin{DoxyCodeInclude}
+
+\end{DoxyCodeInclude}
+
+
+The \+\_\+trans\+\_\+evt event object is of type G\+Event$<$\+X$>$\+: there is not need of defining a special class derived from event. The constructor for \hyperlink{classEthernetInterface}{Ethernet\+Interface} must invoke the register\+\_\+handler() function\+:
+
+ 
+\begin{DoxyCodeInclude}
+
+\end{DoxyCodeInclude}
+
+
+Handler on\+Transmit() is called whenever the event is triggered. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Meta\+Sim\+::\+G\+Event@{Meta\+Sim\+::\+G\+Event}!G\+Event@{G\+Event}}
+\index{G\+Event@{G\+Event}!Meta\+Sim\+::\+G\+Event@{Meta\+Sim\+::\+G\+Event}}
+\subsubsection[{\texorpdfstring{G\+Event(\+G\+Event$<$ X $>$ \&e)}{GEvent(GEvent< X > &e)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X$>$ {\bf Meta\+Sim\+::\+G\+Event}$<$ X $>$\+::{\bf G\+Event} (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+Event}$<$ X $>$ \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1GEvent_a1207c10d8f19e77fcfc10fea1e07a179}{}\label{classMetaSim_1_1GEvent_a1207c10d8f19e77fcfc10fea1e07a179}
+Copy constructor. Useful when creating many events of the same type for the same {\bfseries object}. (Remember\+: all these events point to the same object!) 
+
+\subsection{Member Function Documentation}
+\index{Meta\+Sim\+::\+G\+Event@{Meta\+Sim\+::\+G\+Event}!doit@{doit}}
+\index{doit@{doit}!Meta\+Sim\+::\+G\+Event@{Meta\+Sim\+::\+G\+Event}}
+\subsubsection[{\texorpdfstring{doit()}{doit()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X$>$ virtual void {\bf Meta\+Sim\+::\+G\+Event}$<$ X $>$\+::doit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}{}\label{classMetaSim_1_1GEvent_a50bac7d037bcce48edb2cf2a866ef021}
+Simply calls the specified handler on the specified object.
+
+\begin{DoxySeeAlso}{See also}
+register\+\_\+handler 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classMetaSim_1_1Event_ac9621898eb5775271ca3e0197c27674a}{Meta\+Sim\+::\+Event}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gevent.\+hpp\end{DoxyCompactItemize}

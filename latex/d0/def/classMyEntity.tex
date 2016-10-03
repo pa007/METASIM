@@ -1,0 +1,67 @@
+\hypertarget{classMyEntity}{}\section{My\+Entity Class Reference}
+\label{classMyEntity}\index{My\+Entity@{My\+Entity}}
+
+
+Inheritance diagram for My\+Entity\+:
+% FIG 0
+
+
+Collaboration diagram for My\+Entity\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries My\+Entity} (const std\+::string \&n)\hypertarget{classMyEntity_aac47d7e1d772dd2a17407853eaa344d9}{}\label{classMyEntity_aac47d7e1d772dd2a17407853eaa344d9}
+
+\item 
+void {\bfseries on\+EventA} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$)\hypertarget{classMyEntity_aab21e1f7b8c0b17cf454c79d200e30bd}{}\label{classMyEntity_aab21e1f7b8c0b17cf454c79d200e30bd}
+
+\item 
+void {\bfseries on\+EventB} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$)\hypertarget{classMyEntity_a4b41503ad1f8f424bc9a1231fb9bc9f3}{}\label{classMyEntity_a4b41503ad1f8f424bc9a1231fb9bc9f3}
+
+\item 
+void {\bfseries on\+EventC} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$)\hypertarget{classMyEntity_a2f288e799e24ab46179ce18041854fed}{}\label{classMyEntity_a2f288e799e24ab46179ce18041854fed}
+
+\item 
+void \hyperlink{classMyEntity_a3a19fa3aefcdd55caabe2ea5116d5c3b}{new\+Run} ()
+\item 
+void \hyperlink{classMyEntity_a1d8ff25d7e681bb38f7826ea1ddf6aaf}{end\+Run} ()
+\item 
+bool {\bfseries is\+A\+First} ()\hypertarget{classMyEntity_a25c5a91376d06e0ffbf905a375e41e5a}{}\label{classMyEntity_a25c5a91376d06e0ffbf905a375e41e5a}
+
+\item 
+int {\bfseries get\+Counter} ()\hypertarget{classMyEntity_a0b083a4fbac759a17f79cb54540acac9}{}\label{classMyEntity_a0b083a4fbac759a17f79cb54540acac9}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{My\+Entity@{My\+Entity}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!My\+Entity@{My\+Entity}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void My\+Entity\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMyEntity_a1d8ff25d7e681bb38f7826ea1ddf6aaf}{}\label{classMyEntity_a1d8ff25d7e681bb38f7826ea1ddf6aaf}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classMyEntity_a1d8ff25d7e681bb38f7826ea1ddf6aaf}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_aaf0dfabd7805ec027aa46b9b94a87e5b}{Meta\+Sim\+::\+Entity}.
+
+\index{My\+Entity@{My\+Entity}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!My\+Entity@{My\+Entity}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void My\+Entity\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMyEntity_a3a19fa3aefcdd55caabe2ea5116d5c3b}{}\label{classMyEntity_a3a19fa3aefcdd55caabe2ea5116d5c3b}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classMyEntity_a3a19fa3aefcdd55caabe2ea5116d5c3b}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_a8d146c2ea3472c964f84cf20880ac0c9}{Meta\+Sim\+::\+Entity}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+test/myentity.\+hpp\item 
+test/myentity.\+cpp\end{DoxyCompactItemize}

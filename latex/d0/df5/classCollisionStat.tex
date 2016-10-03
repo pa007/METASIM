@@ -1,0 +1,63 @@
+\hypertarget{classCollisionStat}{}\section{Collision\+Stat Class Reference}
+\label{classCollisionStat}\index{Collision\+Stat@{Collision\+Stat}}
+
+
+Inheritance diagram for Collision\+Stat\+:
+% FIG 0
+
+
+Collaboration diagram for Collision\+Stat\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Collision\+Stat} (const char $\ast$name)\hypertarget{classCollisionStat_aea2e4ff52f6861f301bc2c694f96f05a}{}\label{classCollisionStat_aea2e4ff52f6861f301bc2c694f96f05a}
+
+\item 
+void \hyperlink{classCollisionStat_abf20ddc5f67ae680a8efc670ddd9f870}{probe} (\hyperlink{classMetaSim_1_1Event}{Event} $\ast$e)
+\item 
+void \hyperlink{classCollisionStat_abc29d133c4a85f966eaf3ce5e2e6fe5f}{attach} (\hyperlink{classMetaSim_1_1Entity}{Entity} $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Collision\+Stat@{Collision\+Stat}!attach@{attach}}
+\index{attach@{attach}!Collision\+Stat@{Collision\+Stat}}
+\subsubsection[{\texorpdfstring{attach(\+Entity $\ast$e)}{attach(Entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Collision\+Stat\+::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCollisionStat_abc29d133c4a85f966eaf3ce5e2e6fe5f}{}\label{classCollisionStat_abc29d133c4a85f966eaf3ce5e2e6fe5f}
+This function links the statistical probe to the correct events associated with a given entity.
+
+D\+E\+P\+R\+E\+C\+A\+T\+ED.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]remove this function. Not very OO, because it forces to use dynamic casts. By now it is deprecated. Substituted by add\+Particle() (see \hyperlink{particle_8hpp_source}{particle.\+hpp}). \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{group__metasim__stat_gaf5584d4aefc280eb644997fd13f8cd3d}{Meta\+Sim\+::\+Base\+Stat}.
+
+\index{Collision\+Stat@{Collision\+Stat}!probe@{probe}}
+\index{probe@{probe}!Collision\+Stat@{Collision\+Stat}}
+\subsubsection[{\texorpdfstring{probe(\+Event $\ast$e)}{probe(Event *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Collision\+Stat\+::probe (
+\begin{DoxyParamCaption}
+\item[{{\bf Event} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCollisionStat_abf20ddc5f67ae680a8efc670ddd9f870}{}\label{classCollisionStat_abf20ddc5f67ae680a8efc670ddd9f870}
+level 2 function\+: called by the event action() method.
+
+D\+E\+P\+R\+E\+C\+A\+T\+ED.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]remove this function. Not very OO, because it takes a generic event, and most of the times we must do a dynamic\+\_\+cast$<$$>$. By now it is deprecated. Must be substituted by non-\/virtual probe methods that take the typed event object as parameters (see \hyperlink{particle_8hpp_source}{particle.\+hpp}). \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{Meta\+Sim\+::\+Base\+Stat}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/eth/example.\+cpp\end{DoxyCompactItemize}

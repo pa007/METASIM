@@ -1,0 +1,83 @@
+\hypertarget{classState}{}\section{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+{\ttfamily \#include $<$markov.\+hpp$>$}
+
+
+
+Inheritance diagram for State\+:
+% FIG 0
+
+
+Collaboration diagram for State\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries State} (const char $\ast$n, bool ini=false)\hypertarget{classState_ae40176691bb2c15a36948fb0368f8132}{}\label{classState_ae40176691bb2c15a36948fb0368f8132}
+
+\item 
+void {\bfseries run} ()\hypertarget{classState_a6e167160b4823e97d790578065f509d9}{}\label{classState_a6e167160b4823e97d790578065f509d9}
+
+\item 
+void {\bfseries set\+\_\+running} ()\hypertarget{classState_aba74326efaf6424c255b0aa19e2f7875}{}\label{classState_aba74326efaf6424c255b0aa19e2f7875}
+
+\item 
+void {\bfseries clear\+\_\+running} ()\hypertarget{classState_a286bf4adc9e25e49620423e529427f44}{}\label{classState_a286bf4adc9e25e49620423e529427f44}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Meta\+Sim\+::\+Tick} {\bfseries get\+\_\+last\+\_\+arrival} () const \hypertarget{classState_a1ff6163f1418bbff6f9bd731a66d0daa}{}\label{classState_a1ff6163f1418bbff6f9bd731a66d0daa}
+
+\item 
+void {\bfseries put\+\_\+link} (double avg, \hyperlink{classState}{State} $\ast$p)\hypertarget{classState_a3fb2e64a7f16b9a33f5794ba93035638}{}\label{classState_a3fb2e64a7f16b9a33f5794ba93035638}
+
+\item 
+virtual void \hyperlink{classState_a8761f5b93680e53fefbb5d930ded276e}{new\+Run} ()
+\item 
+virtual void \hyperlink{classState_a569901a3ee19147755f07b07fccdb343}{end\+Run} ()
+\item 
+virtual void {\bfseries print} ()\hypertarget{classState_a7f87423f14baecc25b8d2a70f1db554b}{}\label{classState_a7f87423f14baecc25b8d2a70f1db554b}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJumpEvent}{Jump\+Event} {\bfseries \+\_\+event}\hypertarget{classState_acf8dd8f3f1bfbfd4ef01b831b59ac2ca}{}\label{classState_acf8dd8f3f1bfbfd4ef01b831b59ac2ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classState}{State} class represents a generic state of the markov chain. 
+
+\subsection{Member Function Documentation}
+\index{State@{State}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!State@{State}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void State\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classState_a569901a3ee19147755f07b07fccdb343}{}\label{classState_a569901a3ee19147755f07b07fccdb343}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classState_a569901a3ee19147755f07b07fccdb343}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_aaf0dfabd7805ec027aa46b9b94a87e5b}{Meta\+Sim\+::\+Entity}.
+
+\index{State@{State}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!State@{State}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void State\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classState_a8761f5b93680e53fefbb5d930ded276e}{}\label{classState_a8761f5b93680e53fefbb5d930ded276e}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classState_a8761f5b93680e53fefbb5d930ded276e}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_a8d146c2ea3472c964f84cf20880ac0c9}{Meta\+Sim\+::\+Entity}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+examples/markov/markov.\+hpp\item 
+examples/markov/markov.\+cpp\end{DoxyCompactItemize}

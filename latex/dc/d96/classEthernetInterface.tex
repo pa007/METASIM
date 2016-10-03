@@ -1,0 +1,103 @@
+\hypertarget{classEthernetInterface}{}\section{Ethernet\+Interface Class Reference}
+\label{classEthernetInterface}\index{Ethernet\+Interface@{Ethernet\+Interface}}
+
+
+Inheritance diagram for Ethernet\+Interface\+:
+% FIG 0
+
+
+Collaboration diagram for Ethernet\+Interface\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ethernet\+Interface} (const char $\ast$name, \hyperlink{classNode}{Node} \&n, \hyperlink{classEthernetLink}{Ethernet\+Link} \&l)\hypertarget{classEthernetInterface_a098e33eda9e1451a9bbcea4968bdc311}{}\label{classEthernetInterface_a098e33eda9e1451a9bbcea4968bdc311}
+
+\item 
+\hyperlink{classMetaSim_1_1Tick}{Meta\+Sim\+::\+Tick} {\bfseries next\+Trans\+Time} ()\hypertarget{classEthernetInterface_a937e710ea4d64d229a93f6c1b9050be9}{}\label{classEthernetInterface_a937e710ea4d64d229a93f6c1b9050be9}
+
+\item 
+virtual void {\bfseries send} (\hyperlink{classMessage}{Message} $\ast$m)\hypertarget{classEthernetInterface_ae08eb19026a777d110ccceaea872b73b}{}\label{classEthernetInterface_ae08eb19026a777d110ccceaea872b73b}
+
+\item 
+virtual void {\bfseries on\+Collision} ()\hypertarget{classEthernetInterface_a38b2a444a24230bc804ef3bb53598ca8}{}\label{classEthernetInterface_a38b2a444a24230bc804ef3bb53598ca8}
+
+\item 
+virtual void {\bfseries on\+Transmit} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$e)\hypertarget{classEthernetInterface_a8f2a1f1ad2ab77df6b7c887a2b5b68df}{}\label{classEthernetInterface_a8f2a1f1ad2ab77df6b7c887a2b5b68df}
+
+\item 
+virtual \hyperlink{classMessage}{Message} $\ast$ {\bfseries receive} (\hyperlink{classNode}{Node} $\ast$n)\hypertarget{classEthernetInterface_acb94ffe5ee4765fa1da3c07414d380da}{}\label{classEthernetInterface_acb94ffe5ee4765fa1da3c07414d380da}
+
+\item 
+virtual void {\bfseries on\+Message\+Sent} (\hyperlink{classMessage}{Message} $\ast$m)\hypertarget{classEthernetInterface_af1d5ae0b6baf2f10ebda232c88876772}{}\label{classEthernetInterface_af1d5ae0b6baf2f10ebda232c88876772}
+
+\item 
+virtual void {\bfseries on\+Message\+Received} (\hyperlink{classMessage}{Message} $\ast$m)\hypertarget{classEthernetInterface_ae287765483436ad2e3970ac0a4560016}{}\label{classEthernetInterface_ae287765483436ad2e3970ac0a4560016}
+
+\item 
+void \hyperlink{classEthernetInterface_a484a93873c9151b62b0c909283b64f16}{new\+Run} ()
+\item 
+void \hyperlink{classEthernetInterface_a9b7f49cd7f8cbcf78ed4fd601c486a6c}{end\+Run} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1GEvent}{Meta\+Sim\+::\+G\+Event}$<$ \hyperlink{classEthernetInterface}{Ethernet\+Interface} $>$ {\bfseries \+\_\+trans\+\_\+evt}\hypertarget{classEthernetInterface_ad0b70e92e5525f38f37d2ea31120dbd7}{}\label{classEthernetInterface_ad0b70e92e5525f38f37d2ea31120dbd7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEthernetLink}{Ethernet\+Link} $\ast$ {\bfseries \+\_\+link}\hypertarget{classEthernetInterface_af45c8e0836938fa227e5c961d93ef438}{}\label{classEthernetInterface_af45c8e0836938fa227e5c961d93ef438}
+
+\item 
+std\+::deque$<$ \hyperlink{classMessage}{Message} $\ast$ $>$ {\bfseries \+\_\+queue}\hypertarget{classEthernetInterface_af828c8da3f94d29e75fd6795dfe9c3b9}{}\label{classEthernetInterface_af828c8da3f94d29e75fd6795dfe9c3b9}
+
+\item 
+std\+::vector$<$ \hyperlink{classMessage}{Message} $\ast$ $>$ {\bfseries \+\_\+received}\hypertarget{classEthernetInterface_a6b62ff911e0bbaad3d47541a4b4fc45b}{}\label{classEthernetInterface_a6b62ff911e0bbaad3d47541a4b4fc45b}
+
+\item 
+std\+::vector$<$ \hyperlink{classNode}{Node} $\ast$ $>$ {\bfseries \+\_\+blocked}\hypertarget{classEthernetInterface_a300cd188830eae2065a77d46d89cbe2a}{}\label{classEthernetInterface_a300cd188830eae2065a77d46d89cbe2a}
+
+\item 
+int {\bfseries \+\_\+cont\+\_\+per}\hypertarget{classEthernetInterface_a25b27ac03d95104734a446d3566f1ca0}{}\label{classEthernetInterface_a25b27ac03d95104734a446d3566f1ca0}
+
+\item 
+int {\bfseries \+\_\+backoff}\hypertarget{classEthernetInterface_a3efe15476ab5cb5a124e36b70246e4e7}{}\label{classEthernetInterface_a3efe15476ab5cb5a124e36b70246e4e7}
+
+\item 
+int {\bfseries \+\_\+coll}\hypertarget{classEthernetInterface_ada0fc7328a66c9279574f97ad7cb4579}{}\label{classEthernetInterface_ada0fc7328a66c9279574f97ad7cb4579}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Ethernet\+Interface@{Ethernet\+Interface}!end\+Run@{end\+Run}}
+\index{end\+Run@{end\+Run}!Ethernet\+Interface@{Ethernet\+Interface}}
+\subsubsection[{\texorpdfstring{end\+Run()}{endRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ethernet\+Interface\+::end\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classEthernetInterface_a9b7f49cd7f8cbcf78ed4fd601c486a6c}{}\label{classEthernetInterface_a9b7f49cd7f8cbcf78ed4fd601c486a6c}
+Reset the entity status at the end of every run. This function is called automatically at the end of every run, and its job consists in resetting the entity status (for example closing files, etc.) Warning\+: in \hyperlink{classEthernetInterface_a9b7f49cd7f8cbcf78ed4fd601c486a6c}{end\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_aaf0dfabd7805ec027aa46b9b94a87e5b}{Meta\+Sim\+::\+Entity}.
+
+\index{Ethernet\+Interface@{Ethernet\+Interface}!new\+Run@{new\+Run}}
+\index{new\+Run@{new\+Run}!Ethernet\+Interface@{Ethernet\+Interface}}
+\subsubsection[{\texorpdfstring{new\+Run()}{newRun()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ethernet\+Interface\+::new\+Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classEthernetInterface_a484a93873c9151b62b0c909283b64f16}{}\label{classEthernetInterface_a484a93873c9151b62b0c909283b64f16}
+Resets the entity status at the beginning of every run. This function is called automatically at the beginning of every run, and its job consists in initializing the entity status. Warning\+: in \hyperlink{classEthernetInterface_a484a93873c9151b62b0c909283b64f16}{new\+Run()} is not permitted to create/destroy new entity objects. 
+
+Implements \hyperlink{classMetaSim_1_1Entity_a8d146c2ea3472c964f84cf20880ac0c9}{Meta\+Sim\+::\+Entity}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+examples/eth/netinterface.\+hpp\item 
+examples/eth/netinterface.\+cpp\end{DoxyCompactItemize}

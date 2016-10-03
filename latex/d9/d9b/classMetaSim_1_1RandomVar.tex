@@ -1,0 +1,73 @@
+\hypertarget{classMetaSim_1_1RandomVar}{}\section{Meta\+Sim\+:\+:Random\+Var Class Reference}
+\label{classMetaSim_1_1RandomVar}\index{Meta\+Sim\+::\+Random\+Var@{Meta\+Sim\+::\+Random\+Var}}
+
+
+{\ttfamily \#include $<$randomvar.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Random\+Var\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:Random\+Var\+:
+% FIG 1
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMetaSim_1_1RandomVar_1_1Exc}{Exc}
+\item 
+class \hyperlink{classMetaSim_1_1RandomVar_1_1MaxException}{Max\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef string {\bfseries B\+A\+S\+E\+\_\+\+K\+E\+Y\+\_\+\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__metasim__random_ga465214e20898d424b2083c270361d161}{Random\+Var} (\hyperlink{classMetaSim_1_1RandomGen}{Random\+Gen} $\ast$g=N\+U\+LL)
+\item 
+\hyperlink{group__metasim__random_ga22bc5cb0b21f5c0c72f0a15242c44a75}{Random\+Var} (const \hyperlink{classMetaSim_1_1RandomVar}{Random\+Var} \&r)
+\item 
+virtual double \hyperlink{group__metasim__random_ga9299062bad4e4aa77c9cef1f687f964b}{get} ()=0
+\item 
+virtual double {\bfseries get\+Maximum} ()=0  throw (\+Max\+Exception)
+\item 
+virtual double {\bfseries get\+Minimum} ()=0  throw (\+Max\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{group__metasim__random_ga89cf38f1fd1b6cfd67ae022f6874f82e}{init} (Rand\+Num s)
+\item 
+static \hyperlink{classMetaSim_1_1RandomGen}{Random\+Gen} $\ast$ \hyperlink{group__metasim__random_gaeb0c73814132d1d0631264ec94bbf9bc}{change\+Generator} (\hyperlink{classMetaSim_1_1RandomGen}{Random\+Gen} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Change the standard generator. \end{DoxyCompactList}\item 
+static void \hyperlink{group__metasim__random_ga606bcdbc13861b87d0857a1af29ad07e}{restore\+Generator} ()
+\begin{DoxyCompactList}\small\item\em Restore the standard generator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1RandomGen}{Random\+Gen} $\ast$ \hyperlink{group__metasim__random_ga64ccafdc8f32743c6b6bba7bfc1df4ff}{\+\_\+gen}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Rand\+Num {\bfseries \+\_\+seed}
+\item 
+static Rand\+Num {\bfseries \+\_\+xn}
+\item 
+static \hyperlink{classMetaSim_1_1RandomGen}{Random\+Gen} \hyperlink{group__metasim__random_ga074de34f085259b7b9911e9f0a808d6b}{\+\_\+stdgen}
+\begin{DoxyCompactList}\small\item\em Default generator. \end{DoxyCompactList}\item 
+static \hyperlink{classMetaSim_1_1RandomGen}{Random\+Gen} $\ast$ \hyperlink{group__metasim__random_ga920839e50710a224882a290bc132322d}{\+\_\+pstdgen}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The basic abstract class for random variables. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/randomvar.\+hpp\item 
+src/randomvar.\+cpp\end{DoxyCompactItemize}

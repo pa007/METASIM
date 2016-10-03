@@ -1,0 +1,63 @@
+\hypertarget{classAvgTimeStateStat}{}\section{Avg\+Time\+State\+Stat Class Reference}
+\label{classAvgTimeStateStat}\index{Avg\+Time\+State\+Stat@{Avg\+Time\+State\+Stat}}
+
+
+Inheritance diagram for Avg\+Time\+State\+Stat\+:
+% FIG 0
+
+
+Collaboration diagram for Avg\+Time\+State\+Stat\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Avg\+Time\+State\+Stat} (const char $\ast$n)\hypertarget{classAvgTimeStateStat_a78f09dc4510e1c4f9adc5bc6589a8db3}{}\label{classAvgTimeStateStat_a78f09dc4510e1c4f9adc5bc6589a8db3}
+
+\item 
+virtual void \hyperlink{classAvgTimeStateStat_a8ea42334aca934dcfe2cfe6c4c033aad}{probe} (\hyperlink{classMetaSim_1_1Event}{Meta\+Sim\+::\+Event} $\ast$e)
+\item 
+virtual void \hyperlink{classAvgTimeStateStat_aa059edd518635462a51284e1fa804d1c}{attach} (\hyperlink{classMetaSim_1_1Entity}{Meta\+Sim\+::\+Entity} $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Avg\+Time\+State\+Stat@{Avg\+Time\+State\+Stat}!attach@{attach}}
+\index{attach@{attach}!Avg\+Time\+State\+Stat@{Avg\+Time\+State\+Stat}}
+\subsubsection[{\texorpdfstring{attach(\+Meta\+Sim\+::\+Entity $\ast$e)}{attach(MetaSim::Entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Avg\+Time\+State\+Stat\+::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Meta\+Sim\+::\+Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAvgTimeStateStat_aa059edd518635462a51284e1fa804d1c}{}\label{classAvgTimeStateStat_aa059edd518635462a51284e1fa804d1c}
+This function links the statistical probe to the correct events associated with a given entity.
+
+D\+E\+P\+R\+E\+C\+A\+T\+ED.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]remove this function. Not very OO, because it forces to use dynamic casts. By now it is deprecated. Substituted by add\+Particle() (see \hyperlink{particle_8hpp_source}{particle.\+hpp}). \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{group__metasim__stat_gaf5584d4aefc280eb644997fd13f8cd3d}{Meta\+Sim\+::\+Base\+Stat}.
+
+\index{Avg\+Time\+State\+Stat@{Avg\+Time\+State\+Stat}!probe@{probe}}
+\index{probe@{probe}!Avg\+Time\+State\+Stat@{Avg\+Time\+State\+Stat}}
+\subsubsection[{\texorpdfstring{probe(\+Meta\+Sim\+::\+Event $\ast$e)}{probe(MetaSim::Event *e)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Avg\+Time\+State\+Stat\+::probe (
+\begin{DoxyParamCaption}
+\item[{{\bf Meta\+Sim\+::\+Event} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classAvgTimeStateStat_a8ea42334aca934dcfe2cfe6c4c033aad}{}\label{classAvgTimeStateStat_a8ea42334aca934dcfe2cfe6c4c033aad}
+level 2 function\+: called by the event action() method.
+
+D\+E\+P\+R\+E\+C\+A\+T\+ED.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]remove this function. Not very OO, because it takes a generic event, and most of the times we must do a dynamic\+\_\+cast$<$$>$. By now it is deprecated. Must be substituted by non-\/virtual probe methods that take the typed event object as parameters (see \hyperlink{particle_8hpp_source}{particle.\+hpp}). \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{group__metasim__stat_ga26159e56ee45dc6d8e1413bf7e54ecbe}{Meta\+Sim\+::\+Base\+Stat}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+examples/markov/markov.\+hpp\end{DoxyCompactItemize}

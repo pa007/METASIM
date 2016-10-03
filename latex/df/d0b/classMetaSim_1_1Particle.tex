@@ -1,0 +1,69 @@
+\hypertarget{classMetaSim_1_1Particle}{}\section{Meta\+Sim\+:\+:Particle$<$ E, S $>$ Class Template Reference}
+\label{classMetaSim_1_1Particle}\index{Meta\+Sim\+::\+Particle$<$ E, S $>$@{Meta\+Sim\+::\+Particle$<$ E, S $>$}}
+
+
+{\ttfamily \#include $<$particle.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Particle$<$ E, S $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:Particle$<$ E, S $>$\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1Particle_a0ac0e50800d20b623d907fb231fe890c}{Particle} (E $\ast$e, S $\ast$s)
+\item 
+virtual void {\bfseries probe} ()\hypertarget{classMetaSim_1_1Particle_ac9f1c3ff5fd5080147777f9a6ee37dba}{}\label{classMetaSim_1_1Particle_ac9f1c3ff5fd5080147777f9a6ee37dba}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class E, class S$>$\\*
+class Meta\+Sim\+::\+Particle$<$ E, S $>$}
+
+A particle is a function object whose only job is to \char`\"{}connect\char`\"{} an event of a certain type (template parameter E) to a statistical object (see \hyperlink{basestat_8hpp_source}{basestat.\+hpp}) or to a trace object (template parameter S). The user only needs to call the constructor to create a particle and add it to an event.
+
+The particle has been provided to avoid the need for dynamic\+\_\+casts in the statistical objects and in the tracing objects.
+
+However, the code below is so small, simple and general (two functions!) that it can be reused in any context. The only requirement is that
+
+-\/1) class E has a method named add\+Particle(\+Particle\+Interface $\ast$), -\/2) and class S has a method called probe(\+E \&).
+
+{\bfseries W\+A\+R\+N\+I\+NG} \+: if the second condition does not hold, user could get horrible error messages! 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Meta\+Sim\+::\+Particle@{Meta\+Sim\+::\+Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Meta\+Sim\+::\+Particle@{Meta\+Sim\+::\+Particle}}
+\subsubsection[{\texorpdfstring{Particle(\+E $\ast$e, S $\ast$s)}{Particle(E *e, S *s)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E, class S$>$ {\bf Meta\+Sim\+::\+Particle}$<$ E, S $>$\+::{\bf Particle} (
+\begin{DoxyParamCaption}
+\item[{E $\ast$}]{e, }
+\item[{S $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1Particle_a0ac0e50800d20b623d907fb231fe890c}{}\label{classMetaSim_1_1Particle_a0ac0e50800d20b623d907fb231fe890c}
+\hyperlink{classMetaSim_1_1Particle}{Particle} constructor. This constructor automatically inserts the particle in the event by calling the Event\+::add\+Particle(this) method. The owner of the object becomes the event to which this particle has been added. Therefore,
+
+
+\begin{DoxyItemize}
+\item it is the \hyperlink{classMetaSim_1_1Event}{Event} responsibility to destruct the particle (it is done in the \hyperlink{classMetaSim_1_1Event}{Event} base class destructor)
+\item it is forbidden to add the same particle to two different events (however, we do not check this, cause it would be too much of a hassle). If you need to collect the same statistic from two events, create two particles, the memory overhead is much smaller compared to the code and data structures needed to add a reference counter.
+\end{DoxyItemize}
+
+An example of usage can be found in examples/queue/queue.\+cpp
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & pointer to the event to be traced. \\
+\hline
+{\em s} & pointer to the tracing object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/particle.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+\hypertarget{classMetaSim_1_1StatPercent}{}\section{Meta\+Sim\+:\+:Stat\+Percent Class Reference}
+\label{classMetaSim_1_1StatPercent}\index{Meta\+Sim\+::\+Stat\+Percent@{Meta\+Sim\+::\+Stat\+Percent}}
+
+
+Computes the percentage of occurrences of an event.  
+
+
+
+
+{\ttfamily \#include $<$basestat.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Stat\+Percent\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:Stat\+Percent\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Stat\+Percent} (std\+::string name=\char`\"{}\char`\"{}, double i=0)
+\item 
+virtual void \hyperlink{group__metasim__stat_ga6fe4e2066cb72c9eb74c44d5e700cc86}{record} (double value)
+\item 
+virtual void {\bfseries init\+Value} ()
+\item 
+int {\bfseries get\+Num\+Samples} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries \+\_\+ini}
+\item 
+double {\bfseries \+\_\+num}
+\item 
+double {\bfseries \+\_\+den}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Computes the percentage of occurrences of an event. 
+
+Computes the percentage of times the record is called with a value greater than 0. For example, if record is called as\+: record(1), record(1), record(0), the value is 2/3. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/basestat.\+hpp\end{DoxyCompactItemize}

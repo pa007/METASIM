@@ -1,0 +1,64 @@
+\hypertarget{classMetaSim_1_1BaseExc}{}\section{Meta\+Sim\+:\+:Base\+Exc Class Reference}
+\label{classMetaSim_1_1BaseExc}\index{Meta\+Sim\+::\+Base\+Exc@{Meta\+Sim\+::\+Base\+Exc}}
+
+
+{\ttfamily \#include $<$baseexc.\+hpp$>$}
+
+
+
+Inheritance diagram for Meta\+Sim\+:\+:Base\+Exc\+:
+% FIG 0
+
+
+Collaboration diagram for Meta\+Sim\+:\+:Base\+Exc\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMetaSim_1_1BaseExc_af2a026f2bf16464914fb725e5046e4a5}{Base\+Exc} (const std\+::string \&message, const std\+::string \&cl=\char`\"{}unknown\char`\"{}, const std\+::string \&md=\char`\"{}unknown\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classMetaSim_1_1BaseExc_a363004526cd5f08def3d5fa5c259a10f}{\+\_\+what}\hypertarget{classMetaSim_1_1BaseExc_a363004526cd5f08def3d5fa5c259a10f}{}\label{classMetaSim_1_1BaseExc_a363004526cd5f08def3d5fa5c259a10f}
+
+\begin{DoxyCompactList}\small\item\em Contains a brief description of the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic exception class.
+
+This class is the base used for handling exceptions. Any exception of the simulator has to be derived from this class.
+
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Antonino Casile, Luigi Palopoli, Alessio Balsini 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Meta\+Sim\+::\+Base\+Exc@{Meta\+Sim\+::\+Base\+Exc}!Base\+Exc@{Base\+Exc}}
+\index{Base\+Exc@{Base\+Exc}!Meta\+Sim\+::\+Base\+Exc@{Meta\+Sim\+::\+Base\+Exc}}
+\subsubsection[{\texorpdfstring{Base\+Exc(const std\+::string \&message, const std\+::string \&cl=""unknown"", const std\+::string \&md=""unknown"")}{BaseExc(const std::string &message, const std::string &cl="unknown", const std::string &md="unknown")}}]{\setlength{\rightskip}{0pt plus 5cm}Meta\+Sim\+::\+Base\+Exc\+::\+Base\+Exc (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message, }
+\item[{const std\+::string \&}]{cl = {\ttfamily \char`\"{}unknown\char`\"{}}, }
+\item[{const std\+::string \&}]{md = {\ttfamily \char`\"{}unknown\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMetaSim_1_1BaseExc_af2a026f2bf16464914fb725e5046e4a5}{}\label{classMetaSim_1_1BaseExc_af2a026f2bf16464914fb725e5046e4a5}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em message} & contains the error message. \\
+\hline
+{\em cl} & contains the name of the class where the exception has been raised. \\
+\hline
+{\em md} & contains the name of the module where the exception has been raised. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/baseexc.\+hpp\end{DoxyCompactItemize}

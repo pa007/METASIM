@@ -1,0 +1,55 @@
+\hypertarget{classMetaSim_1_1GnuPlotOutput}{}\section{Meta\+Sim\+:\+:Gnu\+Plot\+Output Class Reference}
+\label{classMetaSim_1_1GnuPlotOutput}\index{Meta\+Sim\+::\+Gnu\+Plot\+Output@{Meta\+Sim\+::\+Gnu\+Plot\+Output}}
+
+
+Produces output in gnuplot format.  
+
+
+
+
+{\ttfamily \#include $<$basestat.\+hpp$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMetaSim_1_1GnuPlotOutput_1_1Exc}{Exc}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries init} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries write} (const T \&t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Produces output in gnuplot format. 
+
+Output for gnuplot. This class open a file for each statistical object and on each file write\+:
+
+
+\begin{DoxyItemize}
+\item the parameters of the simulation (passed to output()) 
+\item the mean 
+\item the confidence interval at .9 
+\end{DoxyItemize}
+
+Just call
+
+
+\begin{DoxyPre} GnuPlotOutput::init(); \end{DoxyPre}
+
+
+before the simulation and call
+
+
+\begin{DoxyPre} GnuPlotOutput::write("%f",par); \end{DoxyPre}
+
+
+after each simulation. The format string is the same as printf. There can be more than one parameter, and of different types! 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/basestat.\+hpp\item 
+src/basestat.\+cpp\end{DoxyCompactItemize}
